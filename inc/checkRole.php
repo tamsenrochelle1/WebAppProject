@@ -1,7 +1,7 @@
 <?php
 
-if (!in_array('Admin', $_SESSION['roles'])) {
-	header("Location: card-list.php"); //needle in a haystack
+if (!in_array('Admin', $_SESSION['account_types'])) {
+	header("Location: inventory.php"); //needle in a haystack
 }
 
 ?>
