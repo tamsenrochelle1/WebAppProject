@@ -14,11 +14,11 @@ if($conn->connect_error) die($conn->connect_error);
 if (isset($_SERVER['PHP_AUTH_USER']) && isset($_SERVER['PHP_AUTH_PW'])) {
 
 	//Get values from SERVER
-	$tmp_username = mysql_entities_fix_string($conn, $_SERVER['PHP_AUTH_USER']);//$_SERVER is the array object from the browser
+	$tmp_user_name = mysql_entities_fix_string($conn, $_SERVER['PHP_AUTH_USER']);//$_SERVER is the array object from the browser
 	$tmp_password = mysql_entities_fix_string($conn, $_SERVER['PHP_AUTH_PW']); //PHP_AUTH_* is where the un and pw are stored after prompt
 
 	//get password from DB w/ SQL
-	$query = "SELECT password FROM user WHERE username = '$tmp_username'";
+	$query = "SELECT password FROM user WHERE username = '$tmp_user_name'";
 
 	$result = $conn->query($query); // -> means "run"
 	if(!$result) die($conn->error);
@@ -40,12 +40,12 @@ if (isset($_SERVER['PHP_AUTH_USER']) && isset($_SERVER['PHP_AUTH_PW'])) {
 	//Compare passwords
 	if($token == $password){
 
-		$user = new User($tmp_username); //create a new User object
+		$user = new User($tmp_user_name); //create a new User object
 
 		session_start();//this must be called anywhere you want to use a session
-		$_SESSION['username'] = $user;	//instead of adding username to the session, we get the user object that contains the username
+		$_SESSION['user_name'] = $user;	//instead of adding username to the session, we get the user object that contains the username
 		$_SESSION['password'] = $tmp_password; //this is the plaintext, not hashed password
-		//$_SESSION['forename'] = $tmp_username;
+		//$_SESSION['forename'] = $tmp_user_name;
 		//$_SESSION['surname'] = $tmp_username;
 
 
