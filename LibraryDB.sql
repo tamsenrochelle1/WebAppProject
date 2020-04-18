@@ -6,7 +6,7 @@ identified by '1234';
 
 CREATE TABLE `member` (
         `member_id` int(10) NOT NULL AUTO_INCREMENT,
-        `account_type` varchar(6) NOT NULL,
+        `roles` varchar(6) NOT NULL,
         `first_name` varchar(20) NOT NULL,
         `last_name` varchar(20) NOT NULL,
         `user_name` varchar(50) NOT NULL,
@@ -20,7 +20,7 @@ CREATE TABLE `member` (
         PRIMARY KEY (`member_id`))
     ENGINE=MyISAM;
 
-    INSERT INTO `member` (`member_id`, `account_type`, `first_name`, `last_name`, `user_name`, `password`, `street`, `city`, `state`, `zip`, `start_date`, `email`) VALUES
+    INSERT INTO `member` (`member_id`, `roles`, `first_name`, `last_name`, `user_name`, `password`, `street`, `city`, `state`, `zip`, `start_date`, `email`) VALUES
     (10000, 'admin', 'Ethan', 'Larsen', 'elarsen', 'root', '123 Easy Street', 'Salt Lake City', 'UT', 84123, '2020-04-09', 'ethan.larsen@gmail.com'),
     (10001, 'admin', 'Chandler', 'Braddley', 'cbraddley', 'root', '567 Some Street', 'Salt Lake City', 'UT', 84123, '2020-04-09', 'Chandler.Braddley@gmail.com'),
     (10002, 'admin', 'Tamsen', 'Reid', 'treid', 'root', 'River Heights', 'South Jordan', 'UT', 84095, '2020-04-09', 'Tamsen.Reid@gmail.com'),
