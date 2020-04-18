@@ -19,29 +19,34 @@
 
   <?php
 
-    $conn = new mysqli($hn, $un, $pw, $db); //this is built-in object for PHP
-    if($conn->connect_error) die($conn->connect_error); //calls function to die for all those error messages
+	
+	require_once  'dblogin.php';
+	require_once 'inc/checksession.php';
+	
+	$conn = new mysqli($hn, $un, $pw, $db);
+	if($conn->connect_error) {die($conn->connect_error);}
 
-    $query = "Select * from inventoryz.books"; //this is the query
-    $result = $conn->query($query); //this will run the query, send in the query string, we store the result of the query and store in result variable
-    if(!$result) die($conn->error); //if result is false, pull up the error
+	$query = "SELECT * FROM book";
+	$result = $conn->query($query); 
+	if(!$result) die($conn->error);
+	$rows = $result->num_rows;
 
-    $rows = $result->num_rows;
-
-    for($j=0; $j<$rows; $j++)
-    {
-    $result->data_seek($j); //we're calling the data_seek() from the result for each row number, this gives us result for each row
-
-    $row = $result->fetch_array(MYSQLI_ASSOC);
+	for($j=0; $j<$rows; $j++)
+	{
+		$result->data_seek($j);
+		$row = $result->fetch_array(MYSQLI_NUM); 
+		$item_description  = $row[2];
+		$author = $row[7];
+		$isbn    = $row[4];
 
 echo <<<_END
 
         <div class="col-md-3">
             <div class="card mb-3">
-                <a href="itemDetails.php?ISBIN=$row[ISBIN]"><img src="images/$row[quantity].jpeg" class="card-img-top" alt="Item"></a>
                 <div class="card-body">
-                    <h5 class="Name">$row[Name]</h5>
-                    <p class="Text">$row[Quantity]</p>
+                    <a href="itemDetails.php?book_id=$row[0]">$row[0]</a>
+                    <p class="Author">Author: $row[7]</p>
+					<p class="ISBN">ISBN: $row[4]</p>
                 </div>
             </div>
         </div>
