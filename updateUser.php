@@ -16,11 +16,11 @@ require_once 'inc/checkRole.php';
     $conn = new mysqli($hn, $un, $pw, $db); //this is built-in object for PHP
     if($conn->connect_error) die($conn->connect_error); //calls function to die for all those error messages
 
-    if(isset($_GET['memberId'])){ //we're using a GET array here, in card-details.php we use ?id in our html, this is a GET parameter so we use GET functions here
+    if(isset($_GET['member_id'])){ //we're using a GET array here, in card-details.php we use ?id in our html, this is a GET parameter so we use GET functions here
 
-    $memberId = $_GET['memberId']; //get the val of id from the GET parameter and store in var
+    $memberId = $_GET['member_id']; //get the val of id from the GET parameter and store in var
 
-    $query = "SELECT * from member where memberId=$memberId ";
+    $query = "SELECT * from member where member_id=$member_id ";
 
     $result = $conn->query($query);
     if(!$result) die($conn->error);
@@ -102,7 +102,7 @@ _END;
       $city = $_POST['city'];
       $state = $_POST['state'];
       $zipCode = $_POST['zipCode'];
-      $memberId = $_POST['memberId'];
+      $member_id = $_POST['memberId'];
       $startDate = $_POST['startDate'];
       $accountType = $_POST['accountType'];
 
