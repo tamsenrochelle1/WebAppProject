@@ -33,40 +33,51 @@ require_once 'inc/checkRole.php';
 
 
 echo <<<_END
-    <div class="container py-5">
-        <div class="row justify-content-center">
-            <div class="col-md-10">
-                <form action="card-update.php" method="post">
-                    <h2>Update Gift Card</h2>
-                    <div class="form-group mb-4">
-                        <label for="giftcardname1">Card Name</label>
-                        <input type="text" class="form-control form-control-lg" name="cardName" id="giftcardname1" aria-describedby="giftcardnameinput" value="$row[cardName]">
-                    </div>
-                    <div class="form-group mb-4">
-                        <label for="giftcardtype">Card Type</label>
-                        <input type="text" class="form-control form-control-lg" name="cardType" id="giftcardtype" aria-describedby="giftcardnameinput" value=$row[cardType]>
-                    </div>
-                    <div class="form-group mb-4">
-                        <label for="giftcardvalue">Card Value</label>
-                        <input type="text" class="form-control form-control-lg" name="cardValue" id="giftcardvalue" aria-describedby="giftcardnameinput" value=$row[cardValue]>
-                    </div>
-                    <div class="form-group mb-4">
-                        <label for="giftcardpoints1">Card Points</label>
-                        <input type="text" class="form-control form-control-lg" name="points" id="giftcardpoints1" aria-describedby="giftcardpointsinput" value=$row[points]>
-                    </div>
-                    <div>
-                       <input type='hidden' name='cardId' value='$row[cardId]'>
-                       <input type='hidden' name='update' value='yes'>
-                    </div>
-                    <div class="form-row justify-content-center">
-                        <div class="form-group mt-4">
-                            <input type="submit" value="Update Card" class="btn btn-primary btn-lg">
-                        </div>
-                    </div>
-                </form>
-            </div>
+   <form action="updateUser.php">
+      <div class="form-row">
+        <div class="form-group col-md-6">
+          <label for="inputEmail4">First Name</label>
+          <input type="text" class="form-control" id="inputFirstName" placeholder="First Name">
         </div>
-    </div>
+        <div class="form-group col-md-6">
+          <label for="inputPassword4">Last Name</label>
+          <input type="text" class="form-control" id="inputLastName" placeholder="Last Name">
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="inputAddress">Address</label>
+        <input type="text" class="form-control" id="inputAddress" placeholder="1234 S. Main St">
+      </div>
+      <div class="form-group">
+        <label for="inputAddress2">Address 2</label>
+        <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment or Unit Number">
+      </div>
+      <div class="form-row">
+        <div class="form-group col-md-6">
+          <label for="inputCity">City</label>
+          <input type="text" class="form-control" id="inputCity">
+        </div>
+        <div class="form-group col-md-4">
+          <label for="inputState">State</label>
+          <select id="inputState" class="form-control">
+            <option selected>Choose...</option>
+            <option>Utah</option>
+            <option>Texas</option>
+            <option>Wyoming</option>
+          </select>
+        </div>
+        <div class="form-group col-md-2">
+          <label for="inputZip">Zip</label>
+          <input type="text" class="form-control" id="inputZip">
+        </div>
+      </div>
+      <div class="form-row">
+      <div class="form-group col-md-3">
+        <label for="inputPhone">Phone Number</label>
+        <input type="tel" class="form-control" id="inputPhone">
+      </div>
+    </div> 
+    </form>
     </body>
     </html>
 
@@ -76,44 +87,6 @@ _END;
 }
 
 
-/*
-<!-- FORM
-
-<div class="container py-5">
-    <div class="row justify-content-center">
-        <div class="col-md-10">
-            <form action="card-add.php" method="post">
-                <h2>New Gift Card</h2>
-                <div class="form-group mb-4">
-                    <label for="giftcardname1">Card Name</label>
-                    <input type="text" class="form-control form-control-lg" name="cardName" id="giftcardname1" aria-describedby="giftcardnameinput" placeholder="enter new gift card name">
-                </div>
-                <div class="form-group mb-4">
-                    <label for="giftcardtype">Card Type</label>
-                    <input type="text" class="form-control form-control-lg" name="cardType" id="giftcardtype" aria-describedby="giftcardnameinput" placeholder="enter new gift card type">
-                </div>
-                <div class="form-group mb-4">
-                    <label for="giftcardvalue">Card Value</label>
-                    <input type="text" class="form-control form-control-lg" name="cardValue" id="giftcardvalue" aria-describedby="giftcardnameinput" placeholder="enter new gift card value">
-                </div>
-                <div class="form-group mb-4">
-                    <label for="giftcardpoints1">Card Points</label>
-                    <input type="text" class="form-control form-control-lg" name="points" id="giftcardpoints1" aria-describedby="giftcardpointsinput" placeholder="enter new gift card points">
-                </div>
-                <div class="form-row justify-content-center">
-                    <div class="form-group mt-4">
-                        <input type="submit" value="Add Card" class="btn btn-primary btn-lg">
-                    </div>
-                </div>
-            </form>
-        </div>
-    </div>
-</div>
-</body>
-</html>
-
--->
-*/
 
 
 
@@ -135,12 +108,12 @@ _END;
 
 
       $query = "UPDATE member SET member_id=$memberId, account_type='$accountType' email='$email', password='$password', firstName='$firstName', lastName='$lastName', phonenumber=$phoneNumber, streetAddress='$streetAddress', city='$city', state='$state', zipCode=$zipCode, startDate='$startDate'
-      WHERE memberId=$memberId"; //cardVal and points are numbers so don't need ''
+      WHERE memberId=$memberId"; 
 
     $result = $conn->query($query);
     if(!$result) die($conn->error);
 
-    header("Location: card-list.php");//this will return you to the view all page
+    header("Location: inventory.php");//this will return you to the view all page
 
     }
 
