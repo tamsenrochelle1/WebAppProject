@@ -87,21 +87,30 @@
           if($conn->connect_error) die($conn->connect_error); //calls function to die for all those error messages
 
     //this needs to be updated::
-          if(isset($_POST['cardName'])) //checking if col has a value
+          if(isset($_POST['member'])) //checking if col has a value
           {
-            $cardName = $_POST['cardName'];
-            $cardType = $_POST['cardType'];
-            $cardValue = $_POST['cardValue'];
-            $points = $_POST['points'];
+            $memberId = $_POST['memberId'];
+            $accountType = $_POST['accountType'];
+            $email = $_POST['email'];
+            $password = $_POST['password'];
+	    $firstName = $_POST['firstName'];
+	    $lastName = $_POST['lastName'];
+	    $phoneNumber = $_POST['phoneNumber'];
+	    $streetAddress = $_POST['streetAddress'];
+	    $city = $_POST['city'];
+	    $state = $_POST['state'];		  
+	    $zipCode = $_POST['zipCode'];
+	    $startDate = $_POST['startdate'];
+	    	  
+		  
 
-
-            $query = "INSERT INTO gift_card (cardName, cardType, cardValue, points) VALUES ('$cardName', '$cardType',$cardValue, $points)"; //cardVal and points are numbers so don't need ''?
+            $query = "INSERT INTO member (memberId, accountType, email, password, firstName, lastName, phoneNumber, streetAddress, city, state, zipcode, startDate) VALUES ($memberId, '$accountType', '$email', '$password', '$firstName', '$lastName', $phoneNumber, '$streetAddress', '$city', '$state', $zipcode, '$startDate')"; 
 
           //echo $query.'<br>';
           $result = $conn->query($query);
           if(!$result) die($conn->error);
 
-          header("Location: card-list.php");//this will return you to the view all page
+          header("Location: inventory.php");//this will return you to the view all page
 
           }
 
