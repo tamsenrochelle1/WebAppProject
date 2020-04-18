@@ -18,22 +18,21 @@ CREATE TABLE `member` (
         `zip` int(5) NOT NULL,
         `start_date` date NOT NULL,
         `email` varchar(50) NOT NULL,
+        `phone_number` varchar(16) NOT NULL,
         PRIMARY KEY (`member_id`))
     ENGINE=MyISAM;
 
-    , ``,
-
-    INSERT INTO `member` (`member_id`, `roles`, `first_name`, `last_name`, `user_name`, `password`, `address_line_1`, `address_line_2`, `city`, `state`, `zip`, `start_date`, `email`) VALUES
-    (10000, 'admin', 'Ethan', 'Larsen', 'elarsen', 'root', '123 Easy Street', ``, 'Salt Lake City', 'UT', 84123, '2020-04-09', 'ethan.larsen@gmail.com'),
-    (10001, 'admin', 'Chandler', 'Braddley', 'cbraddley', 'root', '567 Some Street', ``, 'Salt Lake City', 'UT', 84123, '2020-04-09', 'Chandler.Braddley@gmail.com'),
-    (10002, 'admin', 'Tamsen', 'Reid', 'treid', 'root', 'River Heights', ``, 'South Jordan', 'UT', 84095, '2020-04-09', 'Tamsen.Reid@gmail.com'),
-    (10003, 'admin', 'Dustin', 'Fife', 'dfife', 'root', 'Oak Drive', ``, 'Sandy', 'UT', 84123, '2020-04-09', 'Dustin.Fife@gmail.com'),
-    (10004, 'member', 'Rudy', 'Gobert', 'rgobert', 'root', 'Maple Avenue', ``, 'Cottonwood Heights', 'UT', 84635, '2020-04-03', 'Rudy.Gobert@gmail.com'),
-    (10005, 'member', 'Mike', 'Conley', 'mconley', 'root', 'Cherry Street', ``, 'Draper', 'UT', 84526, '2020-04-02', 'Mike.Conley@gmail.com'),
-    (10006, 'member', 'Bowser', 'Boss', 'bboss', 'root', 'Dogwood Lane', ``, 'Herriman', 'UT', 84856, '2020-04-01', 'Bowser.Boss@gmail.com'),
-    (10007, 'member', 'Peach', 'Princess', 'pprincess', 'root', 'Applewood Row', ``, 'Riverton', 'UT', 84452, '2020-04-01', 'Princess.Peach@gmail.com'),
-    (10008, 'member', 'Mario', 'Plumber', 'mplumber', 'root', 'Mario Street', ``, 'Layton', 'UT', 84953, '2020-04-05', 'Mario.Plumber@gmail.com'),
-    (10009, 'member', 'Lugi', 'Plumber', 'lplumber', 'root', 'Lugi Street', ``, 'Hooper', 'UT', 84456, '2020-04-06', 'Lugi.Plumber@gmail.com');
+    INSERT INTO `member` (`member_id`, `roles`, `first_name`, `last_name`, `user_name`, `password`, `address_line_1`, `address_line_2`, `city`, `state`, `zip`, `start_date`, `email`, `phone_number`) VALUES
+    (10000, 'admin', 'Ethan', 'Larsen', 'elarsen', 'root', '123 Easy Street', NULL, 'Salt Lake City', 'UT', 84123, '2020-04-09', 'ethan.larsen@gmail.com', '8017215003'),
+    (10001, 'admin', 'Chandler', 'Braddley', 'cbraddley', 'root', '567 Some Street', NULL, 'Salt Lake City', 'UT', 84123, '2020-04-09', 'Chandler.Braddley@gmail.com', '8014253625'),
+    (10002, 'admin', 'Tamsen', 'Reid', 'treid', 'root', 'River Heights', NULL, 'South Jordan', 'UT', 84095, '2020-04-09', 'Tamsen.Reid@gmail.com', '8017215232'),
+    (10003, 'admin', 'Dustin', 'Fife', 'dfife', 'root', 'Oak Drive', NULL, 'Sandy', 'UT', 84123, '2020-04-09', 'Dustin.Fife@gmail.com', '5627524603'),
+    (10004, 'member', 'Rudy', 'Gobert', 'rgobert', 'root', 'Maple Avenue', NULL, 'Cottonwood Heights', 'UT', 84635, '2020-04-03', 'Rudy.Gobert@gmail.com', '8018426325'),
+    (10005, 'member', 'Mike', 'Conley', 'mconley', 'root', 'Cherry Street', NULL, 'Draper', 'UT', 84526, '2020-04-02', 'Mike.Conley@gmail.com', '8015632462'),
+    (10006, 'member', 'Bowser', 'Boss', 'bboss', 'root', 'Dogwood Lane', NULL, 'Herriman', 'UT', 84856, '2020-04-01', 'Bowser.Boss@gmail.com', '8013698562'),
+    (10007, 'member', 'Peach', 'Princess', 'pprincess', 'root', 'Applewood Row', NULL, 'Riverton', 'UT', 84452, '2020-04-01', 'Princess.Peach@gmail.com', '8015236526'),
+    (10008, 'member', 'Mario', 'Plumber', 'mplumber', 'root', 'Mario Street', NULL, 'Layton', 'UT', 84953, '2020-04-05', 'Mario.Plumber@gmail.com', '8017536985'),
+    (10009, 'member', 'Lugi', 'Plumber', 'lplumber', 'root', 'Lugi Street', NULL, 'Hooper', 'UT', 84456, '2020-04-06', 'Lugi.Plumber@gmail.com', '8017856324');
 
     CREATE TABLE `library` (
         `library_id` int(10) NOT NULL AUTO_INCREMENT,
