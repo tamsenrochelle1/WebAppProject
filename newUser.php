@@ -1,65 +1,13 @@
-<?php
-    require_once 'dblogin.php';
-
-    $conn = new mysqli($hn, $un, $pw, $db); //this is built-in object for PHP
-    if($conn->connect_error) die($conn->connect_error); //calls function to die for all those error messages
-
-    $salt1 = 'qm&h*';
-    $salt2 = 'pg!@';
-
-    if(isset($_POST['user_name'])) //checking if col has a value
-    {
-	  
-      $date = date("Y-m-d");
-
-      $roles = 'member';
-
-      $first_name = $_POST['first_name'];
-      $last_name = $_POST['last_name'];
-      $user_name = $_POST['user_name'];
-      $password = $_POST['password'];
-      $address_line_1 = $_POST['address_line_1'];
-      $address_line_2 = $_POST['address_line_2'];
-      $city = $_POST['city'];
-      $state = $_POST['state'];
-      $zip = $_POST['zip'];
-      $start_date = '$date';
-      $email = $_POST['email'];
-      $phone_number = $_POST['phone_number'];
-      $token = hash('ripemd128', "$salt1$password$salt2");
-
-	
-
-      $query = "INSERT INTO member(roles, first_name, last_name, user_name, password, address_line_1, address_line_2, city, state, zip, start_date, email, phone_number) VALUES 
-      ('$roles', '$first_name', '$last_name', '$user_name', '$token', '$address_line_1', '$address_line_2', '$city', '$state', '$zip', '2020-04-04', '$email', '$phone_number')";
-      $result = $conn->query($query);
-      if(!$result) die($conn->error);
-
-    header("Location: login.php");
-
-    }
-   $conn->close();
-
-  ?>
-
-
 <html>
 <head>
     <title>New User</title>
-
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <link rel="stylesheet" href="styles.css" >
-
 </head>
 
 <body >
-
+<?php require_once 'inc/menu.php'; ?>
 
 <div class="col-sm-offset-2 col-sm-10">
-<form id='my_form' method = 'post' action="newUser.php">
+<form action="categories.php">
   <div class="form-group">
         <br><h2>Account Creation</h2><br>
   </div>
@@ -67,41 +15,45 @@
   <h5>Enter new login credentials:</h5>
 
   <div class="form-group">
-    <input type="user_name" class="form-control form-control-lg" name="user_name" id="inputUser_Name" aria-describedby="user_nameHelp" placeholder="Username" required>
+    <input type="text" name="user_name" method="post" action="newUser.php"  class="form-control form-control-lg"  id="inputUser_Name" aria-describedby="user_nameHelp" placeholder="Username" required>
   </div>
 
   <div class="form-group">
-    <input type="password" class="form-control form-control-lg" name="password" id="exampleInputPassword1" placeholder="Password" required>
+    <input type="text" name="password" method="post" action="newUser.php" class="form-control form-control-lg"  id="exampleInputPassword1" placeholder="Password" required>
     <p><br><br></p>
   </div>
- 
+  </form>
+
+
+
   <h5>	Personal Details: </h5>
+  <form action="categories.php">
       <div class="form-row">
         <div class="form-group col-md-6">
           <label for="inputEmail4">First Name</label>
-          <input type="text" class="form-control" name="first_name" id="inputFirstName" placeholder="First Name" required>
+          <input type="text" name="first_name" method="post" action="newUser.php" class="form-control"  id="inputFirstName" placeholder="First Name" required>
         </div>
         <div class="form-group col-md-6">
           <label for="inputPassword4">Last Name</label>
-          <input type="text" class="form-control" name="last_name" id="inputLastName" placeholder="Last Name" required>
+          <input type="text" name="last_name" method="post" action="newUser.php" class="form-control"  id="inputLastName" placeholder="Last Name" required>
         </div>
         </div>
         <div class="form-group">
           <label for="inputAddress">Address</label>
-          <input type="text" class="form-control" name="address_line_1" id="inputAddress" placeholder="1234 S. Main St">
+          <input type="text" name="address_line_1" method="post" action="newUser.php" class="form-control"  id="inputAddress" placeholder="1234 S. Main St">
         </div>
       <div class="form-group">
         <label for="inputAddress2">Address 2</label>
-        <input type="text" class="form-control" name="address_line_2" id="inputAddress2" placeholder="Apartment or Unit Number">
+        <input type="text" name="address_line_2" method="post" action="newUser.php" class="form-control"  id="inputAddress2" placeholder="Apartment or Unit Number">
       </div>
       <div class="form-row">
         <div class="form-group col-md-6">
           <label for="inputCity">City</label>
-          <input type="text" name="city" class="form-control" id="inputCity">
+          <input type="text" name="city" method="post" action="newUser.php" class="form-control" id="inputCity">
         </div>
         <div class="form-group col-md-4">
           <label for="inputState">State</label>
-          <select name="state" id="inputState" class="form-control">
+          <select type="text" name="state" method="post" action="newUser.php" id="inputState" class="form-control">
             <option selected>Choose...</option>
             <option>AL</option>
             <option>AK</option>
@@ -157,24 +109,77 @@
         </div>
         <div class="form-group col-md-2">
           <label for="inputZip">Zip</label>
-          <input type="text" class="form-control" name="zip" id="inputZip">
+          <input type="text" name="zip" method="post" action="newUser.php" class="form-control"  id="inputZip">
         </div>
       </div>
       <div class="form-group">
         <label for="inputAddress2">Email</label>
-        <input type="text" class="form-control" name="email" id="inputEmail" placeholder="Email Address">
+        <input type="text" name="email" method="post" action="newUser.php" class="form-control"  id="inputEmail" placeholder="Email Address">
       </div>
       
       <div class="form-row">
       <div class="form-group col-md-3">
         <label for="inputPhone">Phone Number</label>
-        <input type="text" class="form-control" name="phone_number" id="inputPhone">
+        <input type="text" name="phone_number" method="post" action="newUser.php" class="form-control"  id="inputPhone">
       </div>
-	  <br>
     </div>
-   
-
+    
     <button class="btn btn-primary" type="submit">Submit form</button>
   </form>
-  <br>
 
+
+<?php
+  //  require_once 'dblogin.php';
+
+    $conn = new mysqli($hn, $un, $pw, $db); //this is built-in object for PHP
+    if($conn->connect_error) die($conn->connect_error); //calls function to die for all those error messages
+
+    $salt1 = 'qm&h*';
+    $salt2 = 'pg!@';
+
+    if(isset($_POST['email'])) //checking if col has a value
+    {
+      //set date format
+      $date = date('Y-m-d H:i:s');
+
+      $member_id = '';
+      $roles = 'member';
+
+      $first_name = $_POST['first_name'];
+      $last_name = $_POST['last_name'];
+      $user_name = $_POST['user_name'];
+      $password = $_POST['password'];
+      $address_line_1 = $_POST['address_line_1'];
+      $address_line_2 = $_POST['address_line_2'];
+      $city = $_POST['city'];
+      $state = $_POST['state'];
+      $zip = $_POST['zip'];
+      $start_date = '$date';
+      $email = $_POST['email'];
+      $phone_number = $_POST['phone_number'];
+      $token = hash('ripemd128', "$salt1$password$salt2");
+
+
+
+      $query = "INSERT INTO member (roles, first_name, last_name, user_name, password, address_line_1, address_line_2, city, state, zip, start_date, email, phone_number) VALUES 
+      ('$roles', '$first_name', '$last_name', '$user_name', '$token', '$address_line_1', '$address_line_2', '$city', '$state', '$zip', '$start_date', '$email', '$phone_number')";
+      
+      $result = $conn->query($query);
+      if(!$result) die($conn->error);
+
+
+
+
+    //echo $query.'<br>';
+    $result = $conn->query($query);
+    if(!$result) die($conn->error);
+
+    header("Location: categories.php");//this will return you to the view all page
+
+    }
+
+
+   require_once 'inc/footer.php';
+   $conn->close();
+
+  ?>
