@@ -35,7 +35,7 @@ echo <<<_END
  	<p class="item_description">Title: $row[2]</p><p class="equipment_type">Equipment Type: $row[4]</p><p class="purchase_date">Date Purchased: $row[5]</p>
 	<p class="item_type">Item Type: $row[3]</p><p class="equipment_id">Equipment ID: $row[0]</p><p class="item_id">Item ID: $row[1]</p>
 	
-	<a href='update.php?item_id=$row[1]'>Update Equipment</a>
+	<a href='updateEquipment.php?item_id=$row[1]'>Update Equipment</a>
 	<a href='deleteEquipment.php?item_id=$row[1]'>Delete Equipment</a>
 	</pre>
 	
