@@ -34,8 +34,17 @@ CREATE TABLE member (
     (10006, 'member', 'Bowser', 'Boss', 'bboss', 'c9adf19fa02c68697932be19deedbb2b', 'Dogwood Lane', NULL, 'Herriman', 'UT', 84856, '2020-04-01', 'Bowser.Boss@gmail.com', '8013698562'),
     (10007, 'member', 'Peach', 'Princess', 'pprincess', 'root', 'Applewood Row', NULL, 'Riverton', 'UT', 84452, '2020-04-01', 'Princess.Peach@gmail.com', '8015236526'),
     (10008, 'member', 'Mario', 'Plumber', 'mplumber', 'root', 'Mario Street', NULL, 'Layton', 'UT', 84953, '2020-04-05', 'Mario.Plumber@gmail.com', '8017536985'),
-    (10009, 'member', 'Lugi', 'Plumber', 'lplumber', 'root', 'Lugi Street', NULL, 'Hooper', 'UT', 84456, '2020-04-06', 'Lugi.Plumber@gmail.com', '8017856324');
-  
+    (10009, 'member', 'Lugi', 'Plumber', 'lplumber', 'root', 'Lugi Street', NULL, 'Hooper', 'UT', 84456, '2020-04-06', 'Lugi.Plumber@gmail.com', '8017856324'),
+    (10010, 'admin', 'Jeff', 'Larsen', 'elarsen', 'c9adf19fa02c68697932be19deedbb2b', '123 Easy Street', NULL, 'Salt Lake City', 'UT', 84123, '2020-04-09', 'Jeff.larsen@gmail.com', '8017215003'),
+    (10011, 'admin', 'Susy', 'Braddley', 'cbraddley', 'root', '567 Some Street', NULL, 'Salt Lake City', 'UT', 84123, '2020-04-09', 'Susy.Braddley@gmail.com', '8014253625'),
+    (10012, 'admin', 'Allen', 'Reid', 'treid', 'root', 'River Heights', NULL, 'South Jordan', 'UT', 84095, '2020-04-09', 'Allen.Reid@gmail.com', '8017215232'),
+    (10013, 'admin', 'Layne', 'Fife', 'dfife', 'root', 'Oak Drive', NULL, 'Sandy', 'UT', 84123, '2020-04-09', 'Layne.Fife@gmail.com', '5627524603'),
+    (10014, 'member', 'Alfred', 'Gobert', 'rgobert', 'root', 'Maple Avenue', NULL, 'Cottonwood Heights', 'UT', 84635, '2020-04-03', 'Alfred.Gobert@gmail.com', '8018426325'),
+    (10015, 'member', 'Jake', 'Conley', 'mconley', 'root', 'Cherry Street', NULL, 'Draper', 'UT', 84526, '2020-04-02', 'Aaron.Conley@gmail.com', '8015632462'),
+    (10016, 'member', 'Aaron', 'Boss', 'bboss', 'c9adf19fa02c68697932be19deedbb2b', 'Dogwood Lane', NULL, 'Herriman', 'UT', 84856, '2020-04-01', 'Bowser.Boss@gmail.com', '8013698562'),
+    (10017, 'member', 'Eric', 'Princess', 'pprincess', 'root', 'Applewood Row', NULL, 'Riverton', 'UT', 84452, '2020-04-01', 'Eric.Peach@gmail.com', '8015236526'),
+    (10018, 'member', 'Kody', 'Plumber', 'mplumber', 'root', 'Mario Street', NULL, 'Layton', 'UT', 84953, '2020-04-05', 'Kody.Plumber@gmail.com', '8017536985'),
+    (10019, 'member', 'Luke', 'Plumber', 'lplumber', 'root', 'Lugi Street', NULL, 'Hooper', 'UT', 84456, '2020-04-06', 'Luke.Plumber@gmail.com', '8017856324');
 
     CREATE TABLE library (
         library_id int(10) NOT NULL AUTO_INCREMENT,
@@ -75,7 +84,17 @@ CREATE TABLE member (
     (106, 1006,'Python Crash Course', 'book', '978-1-59327-928-8', 'no starch press', '2019-01-01', 'Eric Matthes', 'education'),
     (107, 1007,'Python Crash Course', 'book', '978-1-59327-928-8', 'no starch press', '2019-01-01', 'Eric Matthes', 'education'),
     (108, 1008,'Modern Database MANAGEMENT', 'book', '978-93-868-7326-2', 'Pearson', '2016-01-01', 'Jeffrey A. Hoffer', 'education'),
-    (109, 1009,'Modern Database MANAGEMENT', 'book', '978-93-868-7326-2', 'Pearson', '2016-01-01', 'Jeffrey A. Hoffer', 'education');
+    (109, 1009,'Modern Database MANAGEMENT', 'book', '978-93-868-7326-2', 'Pearson', '2016-01-01', 'Jeffrey A. Hoffer', 'education'),
+    (110, 1010,"Cat and the Hat", 'book', '978-0-07-134679-2', 'Oracle Press', '2014-01-01', 'Hebert Schildt', 'education'),
+    (111, 1011,"Cat and the Hat", 'book', '978-0-07-134679-2', 'Oracle Press', '2014-01-01', 'Hebert Schildt', 'education'),
+    (112, 1012,'Jane and Joe', 'book', '978-0-07-136524-8', 'Oracle Press', '2014-01-01', 'Roopesh Ramklass', 'education'),
+    (113, 1013,'Jane and Joe', 'book', '978-0-07-136524-8', 'Oracle Press', '2014-01-01', 'Roopesh Ramklass', 'education'),
+    (114, 1014,'How to Make Friends and Keep Them', 'book', '978-1-305-963258-1', 'Cengage Learning', '2016-01-01', 'Jill West', 'education'),
+    (115, 1015,'How to Make Friends and Keep Them', 'book', '978-1-305-963258-1', 'Cengage Learning', '2016-01-01', 'Jill West', 'education'),
+    (116, 1016,'So Much SQL...', '978-1-43169-928-8', 'no starch press', '2019-01-01', 'Eric Matthes', 'education'),
+    (117, 1017,'So Much SQL...', 'book', '978-1-43169-928-8', 'no starch press', '2019-01-01', 'Eric Matthes', 'education'),
+    (118, 1018,'This is My Last Class', 'book', '978-63-868-4362-2', 'Pearson', '2016-01-01', 'Jeffrey A. Hoffer', 'education'),
+    (119, 1019,'This is My Last Class', 'book', '978-74-868-4362-2', 'Pearson', '2016-01-01', 'Jeffrey A. Hoffer', 'education');
 
     CREATE TABLE audiobook (
         audiobook_id int(10) NOT NULL AUTO_INCREMENT,
@@ -97,10 +116,20 @@ CREATE TABLE member (
     (204, 1013, 'Becoming', 'audiobook', 'Random House', '2018-11-01', 'Michelle Obama', 'Biography'),
     (205, 1014, 'The Subtle Art of Not Giving a F*ck', 'audiobook', 'HarperAudio', '2016-09-01', 'Mark Manson', 'self help'),
     (206, 1015, 'The Subtle Art of Not Giving a F*ck', 'audiobook', 'HarperAudio', '2016-09-01', 'Mark Manson', 'self help'),
-    (207, 1016, 'Where the Crawdads Sing', 'audiobook', 'Penguin Audio', '2018-08-01', 'Delia Owens', 'fiction'),
-    (208, 1017, 'Where the Crawdads Sing', 'audiobook', 'Penguin Audio', '2018-08-01', 'Delia Owens', 'fiction'),
-    (209, 1018, 'Untamed', 'audiobook', 'Random House', '2020-03-01', 'Glenndon Doyle', 'biography'),
-    (210, 1019, 'Untamed', 'audiobook', 'Random House', '2020-03-01', 'Glenndon Doyle', 'biography');
+    (207, 1016, 'Where the Crawdads Sing', 'audiobook', 'Penguin Audio', '2018-08-03', 'Ashley Owens', 'fiction'),
+    (208, 1017, 'Where the Crawdads Sing', 'audiobook', 'Penguin Audio', '2018-08-03', 'Ashley Owens', 'fiction'),
+    (209, 1018, 'Untamed', 'audiobook', 'Random House', '2020-03-01', 'Mary Doyle', 'biography'),
+    (210, 1019, 'Untamed', 'audiobook', 'Random House', '2020-03-01', 'Mary Doyle', 'biography'),
+    (211, 1020, 'Farmwork Fun', 'audiobook', 'Simon & Schuster Audio', '2019-09-02', 'Lewis King', 'fiction'),
+    (212, 1021, 'Farmwork Fun', 'audiobook', 'Simon & Schuster Audio', '2019-09-02', 'Lewis King', 'fiction'),
+    (213, 1022, 'All About Nothing', 'audiobook', 'Random House', '2018-11-01', 'Jane Obama', 'Biography'),
+    (214, 1023, 'All About Nothing', 'audiobook', 'Random House', '2018-11-01', 'Jane Obama', 'Biography'),
+    (215, 1024, 'Harry Potter', 'audiobook', 'HarperAudio', '2016-09-01', 'Mark Manson', 'self help'),
+    (216, 1025, 'Harry Potter', 'audiobook', 'HarperAudio', '2016-09-01', 'Mark Manson', 'self help'),
+    (217, 1026, 'Insert Audiobook Title Here', 'audiobook', 'Penguin Audio', '2018-08-01', 'Delia Owens', 'fiction'),
+    (218, 1027, 'Insert Audiobook Title Here', 'audiobook', 'Penguin Audio', '2018-08-01', 'Delia Owens', 'fiction'),
+    (219, 1028, 'Stuff and Things', 'audiobook', 'Random House', '2020-03-01', 'Glenndon Doyle', 'biography'),
+    (220, 1029, 'Stuff and Things', 'audiobook', 'Random House', '2020-03-01', 'Glenndon Doyle', 'biography');
 
     CREATE TABLE film (
         film_id int(10) NOT NULL AUTO_INCREMENT,
@@ -124,7 +153,17 @@ CREATE TABLE member (
     (306, 1026, 'Zardoz', 'film', 'John Boorman', '1974-01-01', 'sci-fi'),
     (307, 1027, 'Zardoz', 'film', 'John Boorman', '1974-01-01', 'sci-fi'),
     (308, 1028, 'Doctor Sleep', 'film', 'Mike Flanagan', '2019-01-01', 'horror'),
-    (309, 1029, 'Doctor Sleep', 'film', 'Mike Flanagan', '2019-01-01', 'horror');
+    (309, 1029, 'Doctor Sleep', 'film', 'Mike Flanagan', '2019-01-01', 'horror'),
+    (310, 1030, 'Frozen 2', 'film', 'Wilson Yip', '2019-01-01', 'action'),
+    (311, 1031, 'Frozen 2', 'film', 'Wilson Yip', '2019-01-01', 'action'),
+    (312, 1032, 'Jurassic Park 2', 'film', 'Steven Spielberg', '1993-01-01', 'action'),
+    (313, 1033, 'Jurassic Park 2', 'film', 'Steven Spielberg', '1993-01-01', 'action'),
+    (314, 1034, 'The Boat', 'film', 'Chuck Russell', '1994-01-01', 'comedy'),
+    (315, 1035, 'The Boat', 'film', 'Chuck Russell', '1994-01-01', 'comedy'),
+    (316, 1036, 'Frankenstein', 'film', 'John Boorman', '1974-01-01', 'sci-fi'),
+    (317, 1037, 'Frankenstein', 'film', 'John Boorman', '1974-01-01', 'sci-fi'),
+    (318, 1038, 'Doctor Awake', 'film', 'Mike Flanagan', '2019-01-01', 'horror'),
+    (319, 1039, 'Doctor Awake', 'film', 'Mike Flanagan', '2019-01-01', 'horror');
 
     CREATE TABLE magazine (
         magazine_id int(10) NOT NULL AUTO_INCREMENT,
@@ -149,7 +188,17 @@ CREATE TABLE member (
     (406, 1036, "Car and Driver - Tesla's First Real Test", 'magazine', 'hearst magazines', '2020-03-01', 3623, 'automotive'),
     (407, 1037, "Car and Driver - Tesla's First Real Test", 'magazine', 'hearst magazines', '2020-03-01', 3623, 'automotive'),
     (408, 1038, 'Motor Trend - Super Hybrids', 'magazine', 'magazine express, inc', '2020-03-01', 65423, 'automotive'),
-    (409, 1039, 'Motor Trend - Super Hybrids', 'magazine', 'magazine express, inc', '2020-03-01', 65423, 'automotive');
+    (409, 1039, 'Motor Trend - Super Hybrids', 'magazine', 'magazine express, inc', '2020-03-01', 65423, 'automotive'),
+    (410, 1040, 'People - Who the Hell Reads People?', 'magazine', 'people', '2020-03-01', 1232, 'lifesytle'),
+    (411, 1041, 'People - Who the Hell Reads People?', 'magazine', 'people', '2020-03-01', 1232, 'lifestyle'),
+    (412, 1042, 'Time - Really Sick of Staying Indoors All Day', 'magazine', 'time', '2020-03-02', 2784, 'news'),
+    (413, 1043, 'Time - Really Sick of Staying Indoors All Day', 'magazine', 'time', '2020-03-02', 2784, 'news'),
+    (414, 1044, 'Popular Mechanics - Build Stuff Bob', 'magazine', 'hearst magazines', '2020-03-01', 26549, 'mechanics'),
+    (415, 1045, 'Popular Mechanics - Build Stuff Bob', 'magazine', 'hearst magazines', '2020-03-01', 26549, 'mechanics'),
+    (416, 1046, "Car and Driver - Who is Driving These Days?", 'magazine', 'hearst magazines', '2020-03-01', 3622, 'automotive'),
+    (417, 1047, "Car and Driver - Who is Driving These Days?", 'magazine', 'hearst magazines', '2020-03-01', 3622, 'automotive'),
+    (418, 1048, 'Motor Trend - Vroom Vroom', 'magazine', 'magazine express, inc', '2020-03-01', 65422, 'automotive'),
+    (419, 1049, 'Motor Trend - Vroom Vroom', 'magazine', 'magazine express, inc', '2020-03-01', 65422, 'automotive');
 
     CREATE TABLE music (
         music_id int(10) NOT NULL AUTO_INCREMENT,
