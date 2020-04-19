@@ -17,9 +17,9 @@ require_once 'inc/checksession.php';
     $conn = new mysqli($hn, $un, $pw, $db); //this is built-in object for PHP
     if($conn->connect_error) die($conn->connect_error); //calls function to die for all those error messages
 
-    if(isset($_GET['item_Id'])){ //we're using a GET array here, in card-details.php we use ?id in our html, this is a GET parameter so we use GET functions here
+    if(isset($_GET['item_Id'])){
 
-    $cardId = $_GET['item_id']; //get the val of id from the GET parameter and store in var
+    $cardId = $_GET['item_id']; 
 
     $query = "SELECT * from inventory where item_Id=$item_Id ";
 
