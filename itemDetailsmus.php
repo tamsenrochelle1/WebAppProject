@@ -35,7 +35,7 @@ echo <<<_END
 	<p class="album">Album: $row[5]</p><p class="item_type">Item Type: $row[3]</p><p class="music_id">Music ID: $row[0]</p><p class="item_id">Item ID: $row[1]</p>
 	
 	<a href='update.php?item_id=$row[1]'>Update Music</a>
-	<a href='delete.php?item_id=$row[1]'>Delete Music</a>
+	<a href='deleteMusic.php?item_id=$row[1]'>Delete Music</a>
 	</pre>
 	
 		
