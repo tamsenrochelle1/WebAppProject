@@ -18,11 +18,10 @@
 
 
   <?php
-
+	$page_roles = array('member', 'admin');
 	require_once  'dblogin.php';
 	require_once 'inc/checksession.php';
 	
-	$page_roles = array('member', 'admin');
 
 	$conn = new mysqli($hn, $un, $pw, $db);
 	if($conn->connect_error) {die($conn->connect_error);}

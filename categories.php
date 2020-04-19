@@ -4,7 +4,12 @@
 </head>
 
 <body >
-<?php require_once 'inc/menu.php'; ?>
+<?php 
+	$page_roles = array('member', 'admin');
+	require_once 'dblogin.php'; 
+	require_once 'inc/checksession.php';
+	require_once 'inc/menu.php'; 
+	?>
 
 
 <div class="row">
@@ -15,7 +20,6 @@
 
   </div>
   <div class="col-md-3">
-    <a href="cart.php"> View Cart </a> <br>
   </div>
 </div>
 

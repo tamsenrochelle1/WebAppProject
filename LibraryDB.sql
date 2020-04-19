@@ -60,21 +60,22 @@ CREATE TABLE `member` (
         `publisher_date` date NOT NULL,
         `author` varchar(50) NOT NULL,
         `genre` varchar(25) NOT NULL,
+        `status` varchar(25) NOT NULL,
         PRIMARY KEY (`book_id`),
         KEY `inventory_fk` (`item_id`)
     );
 
-    INSERT INTO `book` (`book_id`, `item_id`, `item_description`, `item_type`, `isbn`, `publisher`, `publisher_date`, `author`, `genre`) VALUES
-    (100, 1000,"Java A Beginner's Guide Sixth Edition", 'book', '978-0-07-180925-2', 'Oracle Press', '2014-01-01', 'Hebert Schildt', 'education'),
-    (101, 1001,"Java A Beginner's Guide Sixth Edition", 'book', '978-0-07-180925-2', 'Oracle Press', '2014-01-01', 'Hebert Schildt', 'education'),
-    (102, 1002,'OCA Oracle Database 12c SQL Fundamentals', 'book', '978-0-07-182028-8', 'Oracle Press', '2014-01-01', 'Roopesh Ramklass', 'education'),
-    (103, 1003,'OCA Oracle Database 12c SQL Fundamentals', 'book', '978-0-07-182028-8', 'Oracle Press', '2014-01-01', 'Roopesh Ramklass', 'education'),
-    (104, 1004,'CompTIA Network+ Guide to Networks', 'book', '978-1-305-09094-1', 'Cengage Learning', '2016-01-01', 'Jill West', 'education'),
-    (105, 1005,'CompTIA Network+ Guide to Networks', 'book', '978-1-305-09094-1', 'Cengage Learning', '2016-01-01', 'Jill West', 'education'),
-    (106, 1006,'Python Crash Course', 'book', '978-1-59327-928-8', 'no starch press', '2019-01-01', 'Eric Matthes', 'education'),
-    (107, 1007,'Python Crash Course', 'book', '978-1-59327-928-8', 'no starch press', '2019-01-01', 'Eric Matthes', 'education'),
-    (108, 1008,'Modern Database MANAGEMENT', 'book', '978-93-868-7326-2', 'Pearson', '2016-01-01', 'Jeffrey A. Hoffer', 'education'),
-    (109, 1009,'Modern Database MANAGEMENT', 'book', '978-93-868-7326-2', 'Pearson', '2016-01-01', 'Jeffrey A. Hoffer', 'education');
+    INSERT INTO `book` (`book_id`, `item_id`, `item_description`, `item_type`, `isbn`, `publisher`, `publisher_date`, `author`, `genre`, `status` ) VALUES
+    (100, 1000,"Java A Beginner's Guide Sixth Edition", 'book', '978-0-07-180925-2', 'Oracle Press', '2014-01-01', 'Hebert Schildt', 'education', 'OUT'),
+    (101, 1001,"Java A Beginner's Guide Sixth Edition", 'book', '978-0-07-180925-2', 'Oracle Press', '2014-01-01', 'Hebert Schildt', 'education', 'IN'),
+    (102, 1002,'OCA Oracle Database 12c SQL Fundamentals', 'book', '978-0-07-182028-8', 'Oracle Press', '2014-01-01', 'Roopesh Ramklass', 'education', 'OUT'),
+    (103, 1003,'OCA Oracle Database 12c SQL Fundamentals', 'book', '978-0-07-182028-8', 'Oracle Press', '2014-01-01', 'Roopesh Ramklass', 'education', 'OUT'),
+    (104, 1004,'CompTIA Network+ Guide to Networks', 'book', '978-1-305-09094-1', 'Cengage Learning', '2016-01-01', 'Jill West', 'education', 'IN'),
+    (105, 1005,'CompTIA Network+ Guide to Networks', 'book', '978-1-305-09094-1', 'Cengage Learning', '2016-01-01', 'Jill West', 'education', 'IN'),
+    (106, 1006,'Python Crash Course', 'book', '978-1-59327-928-8', 'no starch press', '2019-01-01', 'Eric Matthes', 'education','IN'),
+    (107, 1007,'Python Crash Course', 'book', '978-1-59327-928-8', 'no starch press', '2019-01-01', 'Eric Matthes', 'education','OUT'),
+    (108, 1008,'Modern Database MANAGEMENT', 'book', '978-93-868-7326-2', 'Pearson', '2016-01-01', 'Jeffrey A. Hoffer', 'education','OUT'),
+    (109, 1009,'Modern Database MANAGEMENT', 'book', '978-93-868-7326-2', 'Pearson', '2016-01-01', 'Jeffrey A. Hoffer', 'education','IN');
 
     CREATE TABLE `audiobook` (
         `audiobook_id` int(10) NOT NULL AUTO_INCREMENT,
@@ -85,11 +86,12 @@ CREATE TABLE `member` (
         `publisher_date` date NOT NULL,
         `author` varchar(50) NOT NULL,
         `genre` varchar(25) NOT NULL,
+		`status` varchar(25) NOT NULL,
         PRIMARY KEY (`audiobook_id`),
         KEY `inventory_fk` (`item_id`)
     );
 
-    INSERT INTO audiobook (`audiobook_id`, `item_id`, `item_description`, `item_type`, `publisher`, `publisher_date`, `author`, `genre`) VALUES
+    INSERT INTO audiobook (`audiobook_id`, `item_id`, `item_description`, `item_type`, `publisher`, `publisher_date`, `author`, `genre`, `status`) VALUES
     (200, 1010, 'The Institute', 'audiobook', 'Simon & Schuster Audio', '2019-09-01', 'Stephen King', 'fiction'),
     (201, 1011, 'The Institute', 'audiobook', 'Simon & Schuster Audio', '2019-09-01', 'Stephen King', 'fiction'),
     (203, 1012, 'Becoming', 'audiobook', 'Random House', '2018-11-01', 'Michelle Obama', 'Biography'),
@@ -109,11 +111,12 @@ CREATE TABLE `member` (
         `director` varchar(50) NOT NULL,
         `release_date` date NOT NULL,
         `genre` varchar(25) NOT NULL,
+        `status` varchar(25) NOT NULL,
         PRIMARY KEY (`film_id`),
         KEY `inventory_fk` (`item_id`)
     );
 
-    INSERT INTO `film` (`film_id`, `item_id`, `item_description`, `item_type`, `director`, `release_date`, `genre`) VALUES
+    INSERT INTO `film` (`film_id`, `item_id`, `item_description`, `item_type`, `director`, `release_date`, `genre`, `status`) VALUES
     (300, 1020, 'Ip Man 4: The Finale', 'film', 'Wilson Yip', '2019-01-01', 'action'),
     (301, 1021, 'Ip Man 4: The Finale', 'film', 'Wilson Yip', '2019-01-01', 'action'),
     (302, 1022, 'Jurassic Park', 'film', 'Steven Spielberg', '1993-01-01', 'action'),
@@ -134,11 +137,12 @@ CREATE TABLE `member` (
         `publisher_date` date NOT NULL,
         `issue_number` int(5),
         `genre` varchar(25),
+        `status` varchar(25) NOT NULL,
         PRIMARY KEY (`magazine_id`),
         KEY `inventory_fk` (`item_id`)
     );
 
-    INSERT INTO `magazine` (`magazine_id`, `item_id`, `item_description`, `item_type`, `publisher`, `publisher_date`, `issue_number`, `genre`) VALUES
+    INSERT INTO `magazine` (`magazine_id`, `item_id`, `item_description`, `item_type`, `publisher`, `publisher_date`, `issue_number`, `genre`, `status`) VALUES
     (400, 1030, 'People - The Untold Story of Tiger King', 'magazine', 'people', '2020-03-01', 1234, 'lifesytle'),
     (401, 1031, 'People - the Untold Story of Tiger King', 'magazine', 'people', '2020-03-01', 1234, 'lifestyle'),
     (402, 1032, 'Time - Special Report: Heros of the Front Lines', 'magazine', 'time', '2020-03-01', 2765, 'news'),
@@ -159,11 +163,12 @@ CREATE TABLE `member` (
         `album` varchar(50) NOT NULL,
         `genre` varchar(25) NOT NULL,
         `publisher_date` date NOT NULL,
+        `status` varchar(25) NOT NULL,
         PRIMARY KEY (`music_id`),
         KEY `inventory_fk` (`item_id`)
     );
 
-    INSERT INTO `music` (`music_id`, `item_id`, `item_description`, `item_type`, `artist`, `album`, `genre`, `publisher_date`) VALUES
+    INSERT INTO `music` (`music_id`, `item_id`, `item_description`, `item_type`, `artist`, `album`, `genre`, `publisher_date`, `status`) VALUES
     (500, 1040, 'The Arcs - The Arcs vs. The Inventors Vol. I', 'music', 'The Arcs', 'The Arcs vs. The Inventors Vol. 1', 'rock', '2015-01-01'),
     (501, 1041, 'The Arcs - The Arcs vs. The Inventors Vol. I', 'music', 'The Arcs', 'The Arcs vs. The Inventors Vol. 1', 'rock', '2015-01-01'),
     (502, 1042, 'Axel Thesleff - The Hollow Men', 'music', 'Alex Thesleff', 'The Hollow Men', 'indie electronic', '2015-01-01'),
@@ -182,11 +187,12 @@ CREATE TABLE `member` (
         `item_type` varchar(10) NOT NULL,
         `equipment_type` varchar(50) NOT NULL,
         `purchase_date` date NOT NULL,
+        `status` varchar(25) NOT NULL,
         PRIMARY KEY (`equipment_id`),
         KEY `inventory_fk` (`item_id`)
     );
 
-    INSERT INTO `equipment` (`equipment_id`, `item_id`, `item_description`, `item_type`, `equipment_type`, `purchase_date`) VALUES
+    INSERT INTO `equipment` (`equipment_id`, `item_id`, `item_description`, `item_type`, `equipment_type`, `purchase_date`, `status`) VALUES
     (600, 1050, 'Cable 6ft HDMI', 'equipment', 'cable', '2020-04-01'),
     (601, 1051, 'Cable 6ft HDMI', 'equipment', 'cable', '2020-04-01'),
     (602, 1052, 'Projector 4k', 'equipment', 'projector', '2020-04-01'),
@@ -210,7 +216,7 @@ CREATE TABLE `member` (
         KEY `library_fk` (`library_id`)
     );
 
-    INSERT INTO `inventory` (`item_id`, `item_description`, `item_type`, `copy_id`, `library_id`) VALUES
+    INSERT INTO `inventory` (`item_id`, `item_description`, `item_type`, `copy_id`, `library_id`, `status`) VALUES
     (1000, "Java A Beginner's Guide Sixth Edition", 'book', 5000, 001),
     (1001, "Java A Beginner's Guide Sixth Edition", 'book', 5001, 001),
     (1002, 'OCA Oracle Database 12c SQL Fundamentals I Exam Guide', 'book', 5002, 001),
