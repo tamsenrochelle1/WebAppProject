@@ -75,8 +75,8 @@ CREATE TABLE member (
     );
 
     INSERT INTO book (book_id, item_id, item_description, item_type, isbn, publisher, publisher_date, author, genre) VALUES
-    (100, 1000,"Java A Beginner's Guide Sixth Edition", 'book', '978-0-07-180925-2', 'Oracle Press', '2014-01-01', 'Hebert Schildt', 'education'),
-    (101, 1001,"Java A Beginner's Guide Sixth Edition", 'book', '978-0-07-180925-2', 'Oracle Press', '2014-01-01', 'Hebert Schildt', 'education'),
+    (100, 1000,'Java A Beginners Guide Sixth Edition', 'book', '978-0-07-180925-2', 'Oracle Press', '2014-01-01', 'Hebert Schildt', 'education'),
+    (101, 1001,'Java A Beginners Guide Sixth Edition', 'book', '978-0-07-180925-2', 'Oracle Press', '2014-01-01', 'Hebert Schildt', 'education'),
     (102, 1002,'OCA Oracle Database 12c SQL Fundamentals', 'book', '978-0-07-182028-8', 'Oracle Press', '2014-01-01', 'Roopesh Ramklass', 'education'),
     (103, 1003,'OCA Oracle Database 12c SQL Fundamentals', 'book', '978-0-07-182028-8', 'Oracle Press', '2014-01-01', 'Roopesh Ramklass', 'education'),
     (104, 1004,'CompTIA Network+ Guide to Networks', 'book', '978-1-305-09094-1', 'Cengage Learning', '2016-01-01', 'Jill West', 'education'),
@@ -85,18 +85,18 @@ CREATE TABLE member (
     (107, 1007,'Python Crash Course', 'book', '978-1-59327-928-8', 'no starch press', '2019-01-01', 'Eric Matthes', 'education'),
     (108, 1008,'Modern Database MANAGEMENT', 'book', '978-93-868-7326-2', 'Pearson', '2016-01-01', 'Jeffrey A. Hoffer', 'education'),
     (109, 1009,'Modern Database MANAGEMENT', 'book', '978-93-868-7326-2', 'Pearson', '2016-01-01', 'Jeffrey A. Hoffer', 'education'),
-    (110, 1010,"Cat and the Hat", 'book', '978-0-07-134679-2', 'Oracle Press', '2014-01-01', 'Hebert Schildt', 'education'),
-    (111, 1011,"Cat and the Hat", 'book', '978-0-07-134679-2', 'Oracle Press', '2014-01-01', 'Hebert Schildt', 'education'),
+    (110, 1010,'Cat and the Hat', 'book', '978-0-07-134679-2', 'Oracle Press', '2014-01-01', 'Hebert Schildt', 'education'),
+    (111, 1011,'Cat and the Hat', 'book', '978-0-07-134679-2', 'Oracle Press', '2014-01-01', 'Hebert Schildt', 'education'),
     (112, 1012,'Jane and Joe', 'book', '978-0-07-136524-8', 'Oracle Press', '2014-01-01', 'Roopesh Ramklass', 'education'),
     (113, 1013,'Jane and Joe', 'book', '978-0-07-136524-8', 'Oracle Press', '2014-01-01', 'Roopesh Ramklass', 'education'),
     (114, 1014,'How to Make Friends and Keep Them', 'book', '978-1-305-963258-1', 'Cengage Learning', '2016-01-01', 'Jill West', 'education'),
     (115, 1015,'How to Make Friends and Keep Them', 'book', '978-1-305-963258-1', 'Cengage Learning', '2016-01-01', 'Jill West', 'education'),
-    (116, 1016,'So Much SQL...', '978-1-43169-928-8', 'no starch press', '2019-01-01', 'Eric Matthes', 'education'),
+    (116, 1016,'So Much SQL...', 'book', '978-1-43169-928-8', 'no starch press', '2019-01-01', 'Eric Matthes', 'education'),
     (117, 1017,'So Much SQL...', 'book', '978-1-43169-928-8', 'no starch press', '2019-01-01', 'Eric Matthes', 'education'),
     (118, 1018,'This is My Last Class', 'book', '978-63-868-4362-2', 'Pearson', '2016-01-01', 'Jeffrey A. Hoffer', 'education'),
-    (119, 1019,'This is My Last Class', 'book', '978-74-868-4362-2', 'Pearson', '2016-01-01', 'Jeffrey A. Hoffer', 'education');
-
-    CREATE TABLE audiobook (
+    (119, 1019,'This is My Last Class', 'book', '978-74-868-4362-2', 'Pearson', '2016-01-01', 'Jeffrey A. Hoffer', 'education')
+ 
+ CREATE TABLE audiobook (
         audiobook_id int(10) NOT NULL AUTO_INCREMENT,
         item_id int(10) NOT NULL,
         item_description varchar(100) NOT NULL,
