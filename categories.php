@@ -1,6 +1,6 @@
 <html>
 <head>
-    <title>User Database (Items Out)</title>
+    <title>Categories</title>
 </head>
 
 <body >
