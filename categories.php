@@ -30,7 +30,9 @@
           <div class="card mb-3">
               <a href="bookinventory.php"><img src="images/book.jpg" class="card-img-top" alt="Books"></a>
               <div class="card-body">
-                  <h5 class="card-title">Books</h5>
+                  <h4 class="card-title">Books</h4>
+				  <h5 class="card-title">Rental Length: 30 days</h5>
+				  <h5 class="card-title">Late Fee: $1 per day</h5>
               </div>
           </div>
       </div>
@@ -38,7 +40,9 @@
           <div class="card mb-3">
               <a href="filminventory.php"><img src="images/movie.jpg" class="card-img-top" alt="Movie"></a>
               <div class="card-body">
-                  <h5 class="card-title">Movies</h5>
+                  <h4 class="card-title">Movies</h4>
+				  <h5 class="card-title">Rental Length: 30 days</h5>
+				  <h5 class="card-title">Late Fee: $1 per day</h5>
               </div>
           </div>
       </div>
@@ -46,7 +50,9 @@
           <div class="card mb-3">
               <a href="magazineinventory.php"><img src="images/magazine.jpg" class="card-img-top" alt="Magazine"></a>
               <div class="card-body">
-                  <h5 class="card-title">Magazines</h5>
+                  <h4 class="card-title">Magazines</h4>
+				  <h5 class="card-title">Rental Length: 30 days</h5>
+				  <h5 class="card-title">Late Fee: $1 per day</h5>
               </div>
           </div>
       </div>
@@ -57,7 +63,9 @@
           <div class="card mb-3">
               <a href="audiobookinventory.php"><img src="images/audiobook.jpg" class="card-img-top" alt="AudioBooks"></a>
               <div class="card-body">
-                  <h5 class="card-title">Audiobooks</h5>
+                  <h4 class="card-title">Audiobooks</h4>
+				  <h5 class="card-title">Rental Length: 30 days</h5>
+				  <h5 class="card-title">Late Fee: $1 per day</h5>
               </div>
           </div>
       </div>
@@ -65,7 +73,9 @@
           <div class="card mb-3">
               <a href="equipmentinventory.php"><img src="images/equipment.jpg" class="card-img-top" alt="Equipment"></a>
               <div class="card-body">
-                  <h5 class="card-title">Equipment</h5>
+                  <h4 class="card-title">Equipment</h4>
+				  <h5 class="card-title">Rental Length: 30 days</h5>
+				  <h5 class="card-title">Late Fee: $1 per day</h5>
               </div>
           </div>
       </div>
@@ -73,7 +83,9 @@
           <div class="card mb-3">
               <a href="musicinventory.php"><img src="images/music.jpg" class="card-img-top" alt="Music"></a>
               <div class="card-body">
-                  <h5 class="card-title">Music</h5>
+                  <h4 class="card-title">Music</h4>
+				  <h5 class="card-title">Rental Length: 30 days</h5>
+				  <h5 class="card-title">Late Fee: $1 per day</h5>
               </div>
           </div>
       </div>

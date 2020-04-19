@@ -1,6 +1,5 @@
 <?php
     require_once 'dblogin.php';
-	require_once 'inc/menu.php';
 
     $conn = new mysqli($hn, $un, $pw, $db); //this is built-in object for PHP
     if($conn->connect_error) die($conn->connect_error); //calls function to die for all those error messages
@@ -47,6 +46,12 @@
 <html>
 <head>
     <title>New User</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css" >
 
 </head>
 
@@ -172,5 +177,4 @@
     <button class="btn btn-primary" type="submit">Submit form</button>
   </form>
   <br>
-  <?php require_once 'inc/footer.php'; ?>
 
