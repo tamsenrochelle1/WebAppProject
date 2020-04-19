@@ -4,12 +4,7 @@
 </head>
 
 <body >
-<?php 
-	$page_roles = array('member','admin');
-	require_once 'dblogin.php'; 
-	require_once 'inc/checksession.php';
-	require_once 'inc/menu.php'; 
-	?>
+<?php require_once 'inc/menu.php'; ?>
 
 	<div class="col-sm-offset-2 col-sm-10">
 <form action="categories.php">
@@ -156,11 +151,11 @@
             $email = $_POST['email'];
             $phone_number = $_POST['phone_number'];
             
-            $query = "INSERT INTO member (`member_id`, `roles`, `first_name`, `last_name`, `user_name`, `password`, `address_line_1, `address_line_2, `city`, `state`, `zip`, `start_date`, `email`, `phone_number`) VALUES
-            ('$member_id', '$roles', '$first_name', '$last_name', '$user_name', '$password', '$address_line_1', $address_line_2', '$city', '$state', '$zip', '$start_date', '$email', '$phone_number');
+          $query = "INSERT INTO member (member_id, roles, first_name, last_name, user_name, password, address_line_1, address_line_2, city, state, zip, start_date, email, phone_number) VALUES
+          ($member_id, $roles, $first_name, $last_name, $user_name, $password, $address_line_1, $address_line_2, $city, $state, $zip, $start_date, $email, $phone_number)";
 
 
-          //echo $query.'<br>';
+          echo $query.'<br>';
           $result = $conn->query($query);
           if(!$result) die($conn->error);
 
