@@ -38,7 +38,7 @@ echo <<<_END
 	
 	
 	<a href='update.php?item_id=$row[1]'>Update Movie</a>
-	<a href='delete.php?item_id=$row[1]'>Delete Movie</a>
+	<a href='deleteFilm.php?item_id=$row[1]'>Delete Movie</a>
 	</pre>
 	
 		
