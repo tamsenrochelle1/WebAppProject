@@ -2,11 +2,10 @@
 <title>Movies</title>
 </html>
 <?php
-
+$page_roles = array('member', 'admin');
+require_once 'inc/checksession.php';
 require_once 'inc/menu.php';
 require_once 'dblogin.php';
-
-$page_roles = array('member', 'admin');
 
 
 $conn = new mysqli($hn, $un, $pw, $db); //this is built-in object for PHP

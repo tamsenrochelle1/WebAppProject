@@ -2,11 +2,10 @@
 <title>Books</title>
 </html>
 <?php
-
+$page_roles = array('member', 'admin');
+require_once 'inc/checksession.php';
 require_once 'inc/menu.php';
 require_once 'dblogin.php';
-
-$page_roles = array('member', 'admin');
 
 $conn = new mysqli($hn, $un, $pw, $db); //this is built-in object for PHP
 if($conn->connect_error) die($conn->connect_error); //calls function to die for all those error messages
