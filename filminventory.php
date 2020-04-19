@@ -13,7 +13,7 @@
 <div class="container py-5">
     <h1>Movies</h1>
     <hr>
-    <h2 class="mt-4">Choose a category:</h2>
+    <h2 class="mt-4">Choose a Movie:</h2>
       <div class="row">
 
 
