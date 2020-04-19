@@ -174,7 +174,22 @@ CREATE TABLE member (
     (506, 1046, 'Chali 2na, Krafty Kuts - Adventures of a Reluctant Superhero', 'music', 'Chali 2na, Krafty Kuts', 'Adventures of a Reluctnat Superhero', 'rap', '2019-01-01'),
     (507, 1047, 'Chali 2na, Krafty Kuts - Adventures of a Reluctant Superhero', 'music', 'Chali 2na, Krafty Kuts', 'Adventures of a Reluctnat Superhero', 'rap', '2019-01-01'),
     (508, 1048, 'Flight Facilities - Down to Earth', 'music', 'Flight Facilities', 'Down to Earth', 'indie electronic', '2014-01-01'),
-    (509, 1049, 'Flight Facilities - Down to Earth', 'music', 'Flight Facilities', 'Down to Earth', 'indie electronic', '2014-01-01');
+    (509, 1049, 'Flight Facilities - Down to Earth', 'music', 'Flight Facilities', 'Down to Earth', 'indie electronic', '2014-01-01'),    
+    (510, 1050, 'Writings on the Wall', 'music', 'Destinys Child', 'Writings on the Wall', 'pop', '2015-01-01'),
+    (511, 1051, 'Survivor', 'music', 'Destinys Child', 'Survivor', 'pop', '2015-01-01'),
+    (512, 1052, 'Because I love You', 'music', 'Lizzo', 'Because I love You', 'pop', '2015-01-01'),
+    (513, 1053, 'Big Girl Small World', 'music', 'Lizzo', 'Big Girl Small World', 'pop', '2015-01-01'),
+    (514, 1054, 'Damn', 'music', 'Kendrick Lamar', 'Damn', 'rap', '2014-01-01'),
+    (515, 1055, 'To Pimp A Butterfly', 'music', 'Kendrick Lamar', 'Damn', 'rap', '2014-01-01'),
+    (516, 1056, 'KOD', 'music', 'J Cole', 'KOD', 'rap', '2019-01-01'),
+    (517, 1057, 'Forest Hills Drive', 'music', 'J Cole', '2014 Forest Hills Drive', 'rap', '2019-01-01'),
+    (518, 1058, 'For Your Eyes Only', 'music', 'J Cole', '4 Your Eyes Only', 'rap', '2014-01-01'),
+    (519, 1059, 'Born Sinner', 'music', 'J Cole', 'Born Sinner', 'rap',  '2014-01-01');
+    (520, 1060, 'Music Box', 'music', 'Mariah Carey', 'Music Box', 'pop', '2014-01-01'),
+    (521, 1061, 'DayDream', 'music', 'Mariah Carey', 'DayDream', 'pop', '2019-01-01'),
+    (522, 1062, 'Butterfly', 'music', 'Mariah Carey', 'Butterfly', 'pop', '2019-01-01'),
+    (523, 1063, 'Mariah Carey', 'music', 'Mariah Carey','Mariah Carey', 'pop', '2014-01-01'),
+    (524, 1064, 'Merry Christmas', 'music', 'Mariah Carey', 'Merry Christmas', 'pop',  '2014-01-01');
 
     CREATE TABLE equipment (
         equipment_id int(10) NOT NULL AUTO_INCREMENT,
@@ -198,6 +213,17 @@ CREATE TABLE member (
     (607, 1057, 'Folding Chair Plastic', 'equipment', 'chair', '2020-04-01'),
     (608, 1058, 'Cable 12ft HDMI', 'equipment', 'cable', '2020-04-01'),
     (609, 1059, 'Cable 12ft HDMI', 'equipment', 'cable', '2020-04-01');
+    
+    (610, 1060, 'Cable 20ft HDMI', 'equipment', 'cable', '2020-04-01'),
+    (611, 1061, 'Cable 30ft HDMI', 'equipment', 'cable', '2020-04-01'),
+    (612, 1062, 'Projector 5k', 'equipment', 'projector', '2020-04-01'),
+    (613, 1063, 'Projector 6k', 'equipment', 'projector', '2020-04-01'),
+    (614, 1064, 'Record Player Low-Def', 'equipment', 'record player', '2020-04-01'),
+    (615, 1065, 'Record Player Low-Def', 'equipment', 'record player', '2020-04-01'),
+    (616, 1066, 'Folding Chair Wood', 'equipment', 'chair', '2020-04-01'),
+    (617, 1067, 'Folding Chair Wood', 'equipment', 'chair', '2020-04-01'),
+    (618, 1068, 'Cable 20ft HDMI', 'equipment', 'cable', '2020-04-01'),
+    (619, 1069, 'Cable 120ft HDMI', 'equipment', 'cable', '2020-04-01');
 
 
     CREATE TABLE inventory (
@@ -276,7 +302,34 @@ CREATE TABLE member (
     (1056, 'Folding Chair Plastic', 'equipment', 5056, 001),
     (1057, 'Folding Chair Plastic', 'equipment', 5057, 001),
     (1058, 'Cable 12ft HDMI', 'equipment', 5058, 001),
-    (1059, 'Cable 12ft HDMI', 'equipment', 5059, 001);
+    (1059, 'Cable 12ft HDMI', 'equipment', 5059, 001),
+    
+    (610, 1060, 'Cable 20ft HDMI', 'equipment', 'cable', '2020-04-01'),
+    (611, 1061, 'Cable 30ft HDMI', 'equipment', 'cable', '2020-04-01'),
+    (612, 1062, 'Projector 5k', 'equipment', 'projector', '2020-04-01'),
+    (613, 1063, 'Projector 6k', 'equipment', 'projector', '2020-04-01'),
+    (614, 1064, 'Record Player Low-Def', 'equipment', 'record player', '2020-04-01'),
+    (615, 1065, 'Record Player Low-Def', 'equipment', 'record player', '2020-04-01'),
+    (616, 1066, 'Folding Chair Wood', 'equipment', 'chair', '2020-04-01'),
+    (617, 1067, 'Folding Chair Wood', 'equipment', 'chair', '2020-04-01'),
+    (618, 1068, 'Cable 20ft HDMI', 'equipment', 'cable', '2020-04-01'),
+    (619, 1069, 'Cable 120ft HDMI', 'equipment', 'cable', '2020-04-01'),
+
+    (510, 1050, 'Writings on the Wall', 'music', 'Destinys Child', 'Writings on the Wall', 'pop', '2015-01-01'),
+    (511, 1051, 'Survivor', 'music', 'Destinys Child', 'Survivor', 'pop', '2015-01-01'),
+    (512, 1052, 'Because I love You', 'music', 'Lizzo', 'Because I love You', 'pop', '2015-01-01'),
+    (513, 1053, 'Big Girl Small World', 'music', 'Lizzo', 'Big Girl Small World', 'pop', '2015-01-01'),
+    (514, 1054, 'Damn', 'music', 'Kendrick Lamar', 'Damn', 'rap', '2014-01-01'),
+    (515, 1055, 'To Pimp A Butterfly', 'music', 'Kendrick Lamar', 'Damn', 'rap', '2014-01-01'),
+    (516, 1056, 'KOD', 'music', 'J Cole', 'KOD', 'rap', '2019-01-01'),
+    (517, 1057, 'Forest Hills Drive', 'music', 'J Cole', '2014 Forest Hills Drive', 'rap', '2019-01-01'),
+    (518, 1058, 'For Your Eyes Only', 'music', 'J Cole', '4 Your Eyes Only', 'rap', '2014-01-01'),
+    (519, 1059, 'Born Sinner', 'music', 'J Cole', 'Born Sinner', 'rap',  '2014-01-01');
+    (520, 1060, 'Music Box', 'music', 'Mariah Carey', 'Music Box', 'pop', '2014-01-01'),
+    (521, 1061, 'DayDream', 'music', 'Mariah Carey', 'DayDream', 'pop', '2019-01-01'),
+    (522, 1062, 'Butterfly', 'music', 'Mariah Carey', 'Butterfly', 'pop', '2019-01-01'),
+    (523, 1063, 'Mariah Carey', 'music', 'Mariah Carey','Mariah Carey', 'pop', '2014-01-01'),
+    (524, 1064, 'Merry Christmas', 'music', 'Mariah Carey', 'Merry Christmas', 'pop',  '2014-01-01');
 
     CREATE TABLE copy (
         copy_id int(10) NOT NULL AUTO_INCREMENT,
@@ -359,3 +412,4 @@ CREATE TABLE member (
     (5057, 1057, 001, 'new', 'checked out', 10002, '2020-04-05'),
     (5058, 1058, 001, 'new', 'checked out', 10003, '2020-04-01'),
     (5059, 1059, 001, 'new', 'in stock', NULL, NULL);
+
