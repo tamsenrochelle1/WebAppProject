@@ -12,7 +12,7 @@
             <form action="login.php" method="post">
                 <h2>Account Login</h2>
                 <div class="form-group mb-4">
-                    <input type="email" class="form-control form-control-lg" name="user_name"  aria-describedby="emailHelp" placeholder="Email">
+                    <input type="text" class="form-control form-control-lg" name="user_name" placeholder="Username">
                 </div>
                 <div class="form-group">
                     <input type="password" class="form-control form-control-lg" name="password" placeholder="Password">
