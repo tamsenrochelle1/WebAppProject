@@ -15,7 +15,7 @@ class User{
 				
 		$this->user_name = $user_name;
 		
-		$query="select account_type from member where user_name='$user_name' ";
+		$query="select roles from member where user_name='$user_name' ";
 		
 		$result = $conn->query($query);
 		if(!$result) die($conn->error);
@@ -24,7 +24,7 @@ class User{
 		
 		for($i=0; $i<$rows; $i++){
 			$row = $result->fetch_array(MYSQLI_ASSOC);
-			$role = $row['account_type'];
+			$role = $row['roles'];
 			array_push($this->roles, $role); 
 		}				
 		
