@@ -16,9 +16,9 @@
     <img src="images/logo.png" width="30" height="30" class="d-inline-block align-top" alt="">
     <a class="navbar-brand" href="categories.php"> Public Library</a>
     <div class="search-container">
-      <form action="inventory.php" method="GET" action="search.php">
-        <input name="search" input type="text" placeholder="Search..." name="inventory">
-  	    <input type="Submit" name="Submit" Value="Search">
+      <form method="POST" action="search.php">
+        <input name="search" type="text" placeholder="Search..." name="inventory"/>
+  	    <input type="Submit" name="Submit" Value="Search"/>
       </form>
     </div>
     <li><a href='logout.php'>Logout</a></li>

@@ -8,26 +8,36 @@
 	$conn = new mysqli($hn, $un, $pw, $db);
 	if($conn->connect_error) {die($conn->connect_error);}
 
-if (!isset($_GET['search'])){ //could also use POST
-  header("Location:inventory.php");
+if (!isset($_POST['search'])){ //could also use POST
+  header("Location:categories.php");
 }
-$search_sql="SELECT * FROM book WHERE item_description LIKE '%".$_POST['search']."%'";
-$search_query=mysqli_query($search_sql);
-    if(mysql_num_rows($search_query) !=0) {
-$search_rs=mysql_fetch_assoc($search_query);
-}
-?>
 
+$search_sql="SELECT * FROM inventory WHERE item_description LIKE '%".$_POST['search']."%'";
+$search_query=mysqli_query($conn, $search_sql);
+
+if(mysqli_num_rows($search_query)!=0){
+	$search_rs=mysqli_fetch_assoc($search_query);
+}
+
+
+if(mysqli_num_rows($search_query)!=0){
+  do {?>
+	<p><?php echo 'Name: '.$search_rs['item_description'];
+			 echo '<br>';
+			 echo 'Type: '.$search_rs['item_type'];
+			 echo '<br>';
+			 echo 'ID: '.$search_rs['item_id']; 
+			 echo '<br>';
+			 ?> </p>
+	  
+	  
+	  
 <?php
-if(mysql_num_rows($search_query) !=0){
-  do { echo $search_rs['name'];
+} while ($search_rs=mysqli_fetch_assoc($search_query));
 
-} while ($search_rs=mysql_fetch_assoc($search_query));
-}
-else {
+}else{
   echo "No Results Found";
 }
+
 ?>
 
-
-<?php
