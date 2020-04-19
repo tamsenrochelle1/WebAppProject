@@ -4,8 +4,10 @@
 </head>
 
 <?php
-    require_once 'inc/menu.php';
-    require_once 'dblogin.php';
+    $page_roles = array('member', 'admin');
+	require_once 'dblogin.php'; 
+	require_once 'inc/checksession.php';
+	require_once 'inc/menu.php';
 ?>
 
 <body >

@@ -5,8 +5,10 @@
 
 <body >
   <?php
-    require_once 'inc/menu.php';
-    require_once 'dblogin.php';
+    $page_roles = array('member','admin');
+	require_once 'dblogin.php'; 
+	require_once 'inc/checksession.php';
+	require_once 'inc/menu.php'; 
 
 
     $conn = new mysqli($hn, $un, $pw, $db); //this is built-in object for PHP

@@ -1,8 +1,9 @@
 <?php
 
-  require_once 'dblogin.php';
-  require_once 'inc/checksession.php';
-  require_once 'inc/menu.php';
+    $page_roles = array('member','admin');
+	require_once 'dblogin.php'; 
+	require_once 'inc/checksession.php';
+	require_once 'inc/menu.php';
 
 if (!isset($_GET['search'])){ //could also use POST
   header("Location:inventory.php");

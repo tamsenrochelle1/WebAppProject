@@ -1,21 +1,7 @@
 <?php
-
-session_start(); //this must be used every time you want to use the session. Even to end it.
-
-
-if(isset($_SESSION['email']))
-{
-	$_SESSION = array();
+	$_SESSION = array(); //or $_SESSION = null; this makes the session array blank
 	setCookie(session_name(), '', time()-2592000, '/');
-	session_destroy();
+	session_destroy(); //iffy, it may not always work
 	
-		echo "Logout is successful";
-
-		header("Location: login.php");
-}
-
-
-
-
-
+	header("Location: login.php")
 ?>

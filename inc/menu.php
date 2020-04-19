@@ -21,4 +21,5 @@
   	    <input type="Submit" name="Submit" Value="Search">
       </form>
     </div>
+    <li><a href='logout.php'>Logout</a></li>
   </nav>

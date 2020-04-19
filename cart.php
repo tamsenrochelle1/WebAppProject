@@ -4,7 +4,12 @@
 </head>
 
 <body >
-<?php require_once 'inc/menu.php'; ?>
+<?php 
+	$page_roles = array('member','admin');
+	require_once 'dblogin.php'; 
+	require_once 'inc/checksession.php';
+	require_once 'inc/menu.php';  
+	?>
 
 <table class="table table-hover">
   <thead>

@@ -1,6 +1,8 @@
 <?php
-require_once 'inc/checksession.php';
-require_once 'inc/checkRole.php';
+	$page_roles = array('admin');
+	require_once 'dblogin.php'; 
+	require_once 'inc/checksession.php';
+	require_once 'inc/menu.php';
 ?>
 
 <html>

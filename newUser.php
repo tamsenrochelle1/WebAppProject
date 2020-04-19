@@ -4,7 +4,11 @@
 </head>
 
 <body >
-<?php require_once 'inc/menu.php'; ?>
+<?php 
+	$page_roles = array('admin');
+	require_once 'dblogin.php'; 
+	require_once 'inc/checksession.php';
+	require_once 'inc/menu.php'; ?>
 
 <div class="col-sm-offset-2 col-sm-10">
 <form action="categories.php">
