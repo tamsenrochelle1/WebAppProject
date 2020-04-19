@@ -4,11 +4,7 @@
 </head>
 
 <body >
-<?php 
-	$page_roles = array('admin');
-	require_once 'dblogin.php'; 
-	require_once 'inc/checksession.php';
-	require_once 'inc/menu.php'; ?>
+<?php require_once 'inc/menu.php'; ?>
 
 <div class="col-sm-offset-2 col-sm-10">
 <form action="categories.php">
@@ -55,6 +51,7 @@
         <div class="form-group col-md-4">
           <label for="inputState">State</label>
           <select id="inputState" class="form-control">
+            <option selected>Choose...</option>
             <option>Alabama</option>
             <option>Alaska</option>
             <option>Arizona</option>
@@ -103,7 +100,6 @@
             <option>West Virginia</option>
             <option>Wisconsin</option>
             <option>Wyoming</option>
-          </select>
           </select>
         </div>
         <div class="form-group col-md-2">
