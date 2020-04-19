@@ -14,7 +14,7 @@
 <body >
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
     <img src="images/logo.png" width="30" height="30" class="d-inline-block align-top" alt="">
-    <a class="navbar-brand" href="homepage.php"> Public Library</a>
+    <a class="navbar-brand" href="categories.php"> Public Library</a>
     <div class="search-container">
       <form action="inventory.php" method="GET" action="search.php">
         <input name="search" input type="text" placeholder="Search..." name="inventory">
