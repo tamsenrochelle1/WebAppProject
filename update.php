@@ -21,7 +21,7 @@ require_once 'inc/checksession.php';
 
     $cardId = $_GET['item_id']; //get the val of id from the GET parameter and store in var
 
-    $query = "SELECT * from inventory where itemId=$itemId ";
+    $query = "SELECT * from inventory where item_Id=$item_Id ";
 
     $result = $conn->query($query);
     if(!$result) die($conn->error);
