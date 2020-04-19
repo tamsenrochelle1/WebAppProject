@@ -16,7 +16,6 @@
   </div>
   <div class="col-md-3">
     <a href="cart.php"> View Cart </a> <br>
-    <a href="item-maintenance.php"> Item Maintenance (Admin) </a>
   </div>
 </div>
 
