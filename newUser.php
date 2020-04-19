@@ -2,6 +2,21 @@
 <head>
     <title>New User</title>
 </head>
+		<script type='text/javascript' src='validate.js'></script> 
+		<script>
+			function validate(form)
+			{
+				var fail = validateUsername(form.username.value)
+				fail += validateEmail(form.email.value) 
+				fail += validatePassword1(form.password1.value)
+				fail += validatePassword2(form.password2.value)
+				if(form.password1.value!="")
+					fail += comparePasswords(form.password1.value, form.password2.value)	
+							
+				if (fail=="") return true
+				else { alert(fail); return false}
+			}
+		</script>
 
 <body >
 <?php require_once 'inc/menu.php'; ?>
@@ -158,7 +173,7 @@
       $employeeCheck = $_POST['employeeCheck'];
 
 
-      $query = "INSERT INTO users (email, password, firstName, lastName, phoneNumber, streetAddress, city, state, zipCode) VALUES ('$email', $password, '$firstName', $lastName, $phoneNumber, $streetAddress, $city, $state, $zipCode)";
+      $query = "INSERT INTO member (user_name, password, firstName, lastName, phoneNumber, streetAddress, city, state, zipCode) VALUES ('$email', $password, '$firstName', $lastName, $phoneNumber, $streetAddress, $city, $state, $zipCode)";
 
     //echo $query.'<br>';
     $result = $conn->query($query);
