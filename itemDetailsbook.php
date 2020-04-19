@@ -35,7 +35,7 @@ echo <<<_END
 	<p class="publisher">Publisher: $row[5]</p><p class="publisher_date">Date Published: $row[6]</p><p class="item_type">Item Type: $row[3]</p><p class="book_id">Book ID: $row[0]</p><p class="item_id">Item ID: $row[1]</p>
 	
 	<a href='update.php?item_id=$row[1]'>Update Book</a>
-	<a href='delete.php?item_id=$row[1]'>Delete Book</a>
+	<a href='deletebook.php?item_id=$row[1]'>Delete Book</a>
 	</pre>
 	
 		
