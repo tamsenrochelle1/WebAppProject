@@ -11,9 +11,8 @@
 ?>
 
 <body >
-<!-- GIFT CARDS -->
 <div class="container py-5">
-    <h1>Gift Cards</h1>
+    <h1>Categories</h1>
     <hr>
     <h2 class="mt-4">Choose a category:</h2>
       <div class="row">
