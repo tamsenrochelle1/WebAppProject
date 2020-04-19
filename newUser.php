@@ -6,7 +6,7 @@
 		<script>
 			function validate(form)
 			{
-				var fail = validateUsername(form.username.value)
+				var fail = validateUser_name(form.user_name.value)
 				fail += validateEmail(form.email.value) 
 				fail += validatePassword1(form.password1.value)
 				fail += validatePassword2(form.password2.value)
@@ -159,8 +159,9 @@
     if($conn->connect_error) die($conn->connect_error); //calls function to die for all those error messages
 
 
-    if(isset($_POST['email'])) //checking if col has a value
+    if(isset($_POST['user_name'])) //checking if col has a value
     {
+      $user_name = $_POST['user_name'];
       $email = $_POST['email'];
       $password = $_POST['password'];
       $firstName = $_POST['firstName'];
