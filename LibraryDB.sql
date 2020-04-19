@@ -4,6 +4,7 @@ USE LibraryDB;
 grant all on publications.* to 'me'@'email.com'
 identified by '1234';
 
+/*
 CREATE TABLE `member` (
         `member_id` int(10) NOT NULL AUTO_INCREMENT,
         `roles` varchar(6) NOT NULL,
@@ -23,16 +24,17 @@ CREATE TABLE `member` (
     ENGINE=MyISAM;
 
     INSERT INTO `member` (`member_id`, `roles`, `first_name`, `last_name`, `user_name`, `password`, `address_line_1`, `address_line_2`, `city`, `state`, `zip`, `start_date`, `email`, `phone_number`) VALUES
-    (10000, 'admin', 'Ethan', 'Larsen', 'elarsen', 'c9adf19fa02c68697932be19deedbb2b', '123 Easy Street', NULL, 'Salt Lake City', 'UT', 84123, '2020-04-09', 'ethan.larsen@gmail.com', '8017215003'),
-    (10001, 'admin', 'Chandler', 'Braddley', 'cbraddley', 'c9adf19fa02c68697932be19deedbb2b', '567 Some Street', NULL, 'Salt Lake City', 'UT', 84123, '2020-04-09', 'Chandler.Braddley@gmail.com', '8014253625'),
-    (10002, 'admin', 'Tamsen', 'Reid', 'treid', 'c9adf19fa02c68697932be19deedbb2b', 'River Heights', NULL, 'South Jordan', 'UT', 84095, '2020-04-09', 'Tamsen.Reid@gmail.com', '8017215232'),
-    (10003, 'admin', 'Dustin', 'Fife', 'dfife', 'c9adf19fa02c68697932be19deedbb2b', 'Oak Drive', NULL, 'Sandy', 'UT', 84123, '2020-04-09', 'Dustin.Fife@gmail.com', '5627524603'),
-    (10004, 'member', 'Rudy', 'Gobert', 'rgobert', 'c9adf19fa02c68697932be19deedbb2b', 'Maple Avenue', NULL, 'Cottonwood Heights', 'UT', 84635, '2020-04-03', 'Rudy.Gobert@gmail.com', '8018426325'),
-    (10005, 'member', 'Mike', 'Conley', 'mconley', 'c9adf19fa02c68697932be19deedbb2b', 'Cherry Street', NULL, 'Draper', 'UT', 84526, '2020-04-02', 'Mike.Conley@gmail.com', '8015632462'),
-    (10006, 'member', 'Bowser', 'Boss', 'bboss', 'c9adf19fa02c68697932be19deedbb2b', 'Dogwood Lane', NULL, 'Herriman', 'UT', 84856, '2020-04-01', 'Bowser.Boss@gmail.com', '8013698562'),
-    (10007, 'member', 'Peach', 'Princess', 'pprincess', 'c9adf19fa02c68697932be19deedbb2b', 'Applewood Row', NULL, 'Riverton', 'UT', 84452, '2020-04-01', 'Princess.Peach@gmail.com', '8015236526'),
-    (10008, 'member', 'Mario', 'Plumber', 'mplumber', 'c9adf19fa02c68697932be19deedbb2b', 'Mario Street', NULL, 'Layton', 'UT', 84953, '2020-04-05', 'Mario.Plumber@gmail.com', '8017536985'),
-    (10009, 'member', 'Lugi', 'Plumber', 'lplumber', 'c9adf19fa02c68697932be19deedbb2b', 'Lugi Street', NULL, 'Hooper', 'UT', 84456, '2020-04-06', 'Lugi.Plumber@gmail.com', '8017856324');
+    (10000, 'admin', 'Ethan', 'Larsen', 'elarsen', 'root', '123 Easy Street', NULL, 'Salt Lake City', 'UT', 84123, '2020-04-09', 'ethan.larsen@gmail.com', '8017215003'),
+    (10001, 'admin', 'Chandler', 'Braddley', 'cbraddley', 'root', '567 Some Street', NULL, 'Salt Lake City', 'UT', 84123, '2020-04-09', 'Chandler.Braddley@gmail.com', '8014253625'),
+    (10002, 'admin', 'Tamsen', 'Reid', 'treid', 'root', 'River Heights', NULL, 'South Jordan', 'UT', 84095, '2020-04-09', 'Tamsen.Reid@gmail.com', '8017215232'),
+    (10003, 'admin', 'Dustin', 'Fife', 'dfife', 'root', 'Oak Drive', NULL, 'Sandy', 'UT', 84123, '2020-04-09', 'Dustin.Fife@gmail.com', '5627524603'),
+    (10004, 'member', 'Rudy', 'Gobert', 'rgobert', 'root', 'Maple Avenue', NULL, 'Cottonwood Heights', 'UT', 84635, '2020-04-03', 'Rudy.Gobert@gmail.com', '8018426325'),
+    (10005, 'member', 'Mike', 'Conley', 'mconley', 'root', 'Cherry Street', NULL, 'Draper', 'UT', 84526, '2020-04-02', 'Mike.Conley@gmail.com', '8015632462'),
+    (10006, 'member', 'Bowser', 'Boss', 'bboss', 'root', 'Dogwood Lane', NULL, 'Herriman', 'UT', 84856, '2020-04-01', 'Bowser.Boss@gmail.com', '8013698562'),
+    (10007, 'member', 'Peach', 'Princess', 'pprincess', 'root', 'Applewood Row', NULL, 'Riverton', 'UT', 84452, '2020-04-01', 'Princess.Peach@gmail.com', '8015236526'),
+    (10008, 'member', 'Mario', 'Plumber', 'mplumber', 'root', 'Mario Street', NULL, 'Layton', 'UT', 84953, '2020-04-05', 'Mario.Plumber@gmail.com', '8017536985'),
+    (10009, 'member', 'Lugi', 'Plumber', 'lplumber', 'root', 'Lugi Street', NULL, 'Hooper', 'UT', 84456, '2020-04-06', 'Lugi.Plumber@gmail.com', '8017856324');
+    */
 
     CREATE TABLE `library` (
         `library_id` int(10) NOT NULL AUTO_INCREMENT,
