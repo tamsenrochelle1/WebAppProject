@@ -29,7 +29,7 @@ CREATE TABLE member (
     (10001, 'admin', 'Chandler', 'Braddley', 'cbraddley', 'root', '567 Some Street', NULL, 'Salt Lake City', 'UT', 84123, '2020-04-09', 'Chandler.Braddley@gmail.com', '8014253625'),
     (10002, 'admin', 'Tamsen', 'Reid', 'treid', 'root', 'River Heights', NULL, 'South Jordan', 'UT', 84095, '2020-04-09', 'Tamsen.Reid@gmail.com', '8017215232'),
     (10003, 'admin', 'Dustin', 'Fife', 'dfife', 'root', 'Oak Drive', NULL, 'Sandy', 'UT', 84123, '2020-04-09', 'Dustin.Fife@gmail.com', '5627524603'),
-    (10004, 'member', 'Rudy', 'Gobert', 'rgobert', 'root', 'Maple Avenue', NULL, 'Cottonwood Heights', 'UT', 84635, '2020-04-03', 'Rudy.Gobert@gmail.com', '8018426325'),
+    (10004, 'member', 'Rudy', 'Gobert', 'rgobert', 'c9adf19fa02c68697932be19deedbb2b', 'Maple Avenue', NULL, 'Cottonwood Heights', 'UT', 84635, '2020-04-03', 'Rudy.Gobert@gmail.com', '8018426325'),
     (10005, 'member', 'Mike', 'Conley', 'mconley', 'root', 'Cherry Street', NULL, 'Draper', 'UT', 84526, '2020-04-02', 'Mike.Conley@gmail.com', '8015632462'),
     (10006, 'member', 'Bowser', 'Boss', 'bboss', 'c9adf19fa02c68697932be19deedbb2b', 'Dogwood Lane', NULL, 'Herriman', 'UT', 84856, '2020-04-01', 'Bowser.Boss@gmail.com', '8013698562'),
     (10007, 'member', 'Peach', 'Princess', 'pprincess', 'root', 'Applewood Row', NULL, 'Riverton', 'UT', 84452, '2020-04-01', 'Princess.Peach@gmail.com', '8015236526'),
