@@ -233,7 +233,7 @@ CREATE TABLE member (
     (516, 1056, 'KOD', 'music', 'J Cole', 'KOD', 'rap', '2019-01-01'),
     (517, 1057, 'Forest Hills Drive', 'music', 'J Cole', '2014 Forest Hills Drive', 'rap', '2019-01-01'),
     (518, 1058, 'For Your Eyes Only', 'music', 'J Cole', '4 Your Eyes Only', 'rap', '2014-01-01'),
-    (519, 1059, 'Born Sinner', 'music', 'J Cole', 'Born Sinner', 'rap',  '2014-01-01');
+    (519, 1059, 'Born Sinner', 'music', 'J Cole', 'Born Sinner', 'rap',  '2014-01-01'),
     (520, 1060, 'Music Box', 'music', 'Mariah Carey', 'Music Box', 'pop', '2014-01-01'),
     (521, 1061, 'DayDream', 'music', 'Mariah Carey', 'DayDream', 'pop', '2019-01-01'),
     (522, 1062, 'Butterfly', 'music', 'Mariah Carey', 'Butterfly', 'pop', '2019-01-01'),
