@@ -261,8 +261,7 @@ CREATE TABLE member (
     (606, 1056, 'Folding Chair Plastic', 'equipment', 'chair', '2020-04-01'),
     (607, 1057, 'Folding Chair Plastic', 'equipment', 'chair', '2020-04-01'),
     (608, 1058, 'Cable 12ft HDMI', 'equipment', 'cable', '2020-04-01'),
-    (609, 1059, 'Cable 12ft HDMI', 'equipment', 'cable', '2020-04-01');
-    
+    (609, 1059, 'Cable 12ft HDMI', 'equipment', 'cable', '2020-04-01'),
     (610, 1060, 'Cable 20ft HDMI', 'equipment', 'cable', '2020-04-01'),
     (611, 1061, 'Cable 30ft HDMI', 'equipment', 'cable', '2020-04-01'),
     (612, 1062, 'Projector 5k', 'equipment', 'projector', '2020-04-01'),
@@ -297,7 +296,6 @@ CREATE TABLE member (
     (1007, 'Python Crash Course', 'book', 5007, 001),
     (1008, 'Modern Database MANAGEMENT', 'book', 5008, 001),
     (1009, 'Modern Database MANAGEMENT', 'book', 5009, 001),
-
     (1010, 'The Institute', 'audiobook', 5010, 001),
     (1011, 'The Institute', 'audiobook', 5011, 001),
     (1012, 'Becoming', 'audiobook', 5012, 001),
@@ -319,7 +317,6 @@ CREATE TABLE member (
     (1027, 'Zardoz', 'film', 5027, 001),
     (1028, 'Doctor Sleep', 'film', 5028, 001),
     (1029, 'Doctor Sleep', 'film', 5029, 001),
-
     (1030, 'People - The Untold Story of Tiger King', 'magazine', 5030, 001),
     (1031, 'People - the Untold Story of Tiger King', 'magazine', 5031, 001),
     (1032, 'Time - Special Report: Heros of the Front Lines', 'magazine', 5032, 001),
@@ -330,7 +327,6 @@ CREATE TABLE member (
     (1037, "Car and Driver - Tesla's First Real Test", 'magazine', 5037, 001),
     (1038, 'Motor Trend - Super Hybrids', 'magazine', 5038, 001),
     (1039, 'Motor Trend - Super Hybrids', 'magazine', 5039, 001),
-
     (1040, 'The Arcs - The Arcs vs. The Inventors Vol. I', 'music', 5040, 001),
     (1041, 'The Arcs - The Arcs vs. The Inventors Vol. I', 'music', 5041, 001),
     (1042, 'Axel Thesleff - The Hollow Men', 'music', 5042, 001),
@@ -341,7 +337,6 @@ CREATE TABLE member (
     (1047, 'Chali 2na, Krafty Kuts - Adventures of a Reluctant Superhero', 'music', 5047, 001),
     (1048, 'Flight Facilities - Down to Earth', 'music', 5048, 001),
     (1049, 'Flight Facilities - Down to Earth', 'music', 5049, 001),
-
     (1050, 'Cable 6ft HDMI', 'equipment', 5050, 001),
     (1051, 'Cable 6ft HDMI', 'equipment', 5051, 001),
     (1052, 'Projector 4k', 'equipment', 5052, 001),
@@ -352,33 +347,26 @@ CREATE TABLE member (
     (1057, 'Folding Chair Plastic', 'equipment', 5057, 001),
     (1058, 'Cable 12ft HDMI', 'equipment', 5058, 001),
     (1059, 'Cable 12ft HDMI', 'equipment', 5059, 001),
-    
-    (610, 1060, 'Cable 20ft HDMI', 'equipment', 'cable', '2020-04-01'),
-    (611, 1061, 'Cable 30ft HDMI', 'equipment', 'cable', '2020-04-01'),
-    (612, 1062, 'Projector 5k', 'equipment', 'projector', '2020-04-01'),
-    (613, 1063, 'Projector 6k', 'equipment', 'projector', '2020-04-01'),
-    (614, 1064, 'Record Player Low-Def', 'equipment', 'record player', '2020-04-01'),
-    (615, 1065, 'Record Player Low-Def', 'equipment', 'record player', '2020-04-01'),
-    (616, 1066, 'Folding Chair Wood', 'equipment', 'chair', '2020-04-01'),
-    (617, 1067, 'Folding Chair Wood', 'equipment', 'chair', '2020-04-01'),
-    (618, 1068, 'Cable 20ft HDMI', 'equipment', 'cable', '2020-04-01'),
-    (619, 1069, 'Cable 120ft HDMI', 'equipment', 'cable', '2020-04-01'),
-
-    (510, 1050, 'Writings on the Wall', 'music', 'Destinys Child', 'Writings on the Wall', 'pop', '2015-01-01'),
-    (511, 1051, 'Survivor', 'music', 'Destinys Child', 'Survivor', 'pop', '2015-01-01'),
-    (512, 1052, 'Because I love You', 'music', 'Lizzo', 'Because I love You', 'pop', '2015-01-01'),
-    (513, 1053, 'Big Girl Small World', 'music', 'Lizzo', 'Big Girl Small World', 'pop', '2015-01-01'),
-    (514, 1054, 'Damn', 'music', 'Kendrick Lamar', 'Damn', 'rap', '2014-01-01'),
-    (515, 1055, 'To Pimp A Butterfly', 'music', 'Kendrick Lamar', 'Damn', 'rap', '2014-01-01'),
-    (516, 1056, 'KOD', 'music', 'J Cole', 'KOD', 'rap', '2019-01-01'),
-    (517, 1057, 'Forest Hills Drive', 'music', 'J Cole', '2014 Forest Hills Drive', 'rap', '2019-01-01'),
-    (518, 1058, 'For Your Eyes Only', 'music', 'J Cole', '4 Your Eyes Only', 'rap', '2014-01-01'),
-    (519, 1059, 'Born Sinner', 'music', 'J Cole', 'Born Sinner', 'rap',  '2014-01-01');
-    (520, 1060, 'Music Box', 'music', 'Mariah Carey', 'Music Box', 'pop', '2014-01-01'),
-    (521, 1061, 'DayDream', 'music', 'Mariah Carey', 'DayDream', 'pop', '2019-01-01'),
-    (522, 1062, 'Butterfly', 'music', 'Mariah Carey', 'Butterfly', 'pop', '2019-01-01'),
-    (523, 1063, 'Mariah Carey', 'music', 'Mariah Carey','Mariah Carey', 'pop', '2014-01-01'),
-    (524, 1064, 'Merry Christmas', 'music', 'Mariah Carey', 'Merry Christmas', 'pop',  '2014-01-01');
+    (1060, 'Cable 20ft HDMI', 'equipment', 5060, 001),
+    (1061, 'Cable 30ft HDMI', 'equipment', 5061, 001),
+    (1062, 'Projector 5k', 'equipment', 5062, 001),
+    (1063, 'Projector 6k', 'equipment', 5063, 001),
+    (1064, 'Record Player Low-Def', 'equipment', 5064, 001),
+    (1065, 'Record Player Low-Def', 'equipment', 5065, 001),
+    (1066, 'Folding Chair Wood', 'equipment', 5066, 001),
+    (1067, 'Folding Chair Wood', 'equipment', 5067, 001),
+    (1068, 'Cable 20ft HDMI', 'equipment', 5068, 001),
+    (1069, 'Cable 120ft HDMI', 'equipment', 5069, 001),
+    (1050, 'Writings on the Wall', 'music', 5070, 001),
+    (1051, 'Survivor', 'music', 5071, 001),
+    (1052, 'Because I love You', 'music', 5072, 001),
+    (1053, 'Big Girl Small World', 'music', 5073, 001),
+    (1054, 'Damn', 'music', 5074, 001),
+    (1055, 'To Pimp A Butterfly', 'music', 5075, 001),
+    (1056, 'KOD', 'music', 5076, 001),
+    (1057, 'Forest Hills Drive', 'music', 5077, 001),
+    (1058, 'For Your Eyes Only', 'music', 5078, 001),
+    (1059, 'Born Sinner', 'music', 5079, 001);
 
     CREATE TABLE copy (
         copy_id int(10) NOT NULL AUTO_INCREMENT,
@@ -395,7 +383,7 @@ CREATE TABLE member (
     );
 
 
-    INSERT INTO copy(copy_id,item_id, library_id, copy_condition, checkout_status, member_id, checkout_date) VALUES
+    INSERT INTO copy(copy_id, item_id, library_id, copy_condition, checkout_status, member_id, checkout_date) VALUES
     (5000, 1000, 001, 'new', 'checked out', 10000, '2020-04-12'),
     (5001, 1001, 001, 'new', 'in stock', NULL, '2020-04-01'),
     (5002, 1002, 001, 'used', 'in stock', NULL, '2020-04-01'),
@@ -428,7 +416,6 @@ CREATE TABLE member (
     (5027, 1027, 001, 'new', 'checked out', 10000, '2020-04-08'),
     (5028, 1028, 001, 'new', 'in stock', NULL, NULL),
     (5029, 1029, 001, 'new', 'checked out', 10007, '2020-04-09'),
-
     (5030, 1030, 001, 'new', 'checked out', 10000, '2020-04-02'),
     (5031, 1031, 001, 'new', 'in stock', NULL, NULL),
     (5032, 1032, 001, 'new', 'checked out', 10001, '2020-04-06'),
@@ -439,7 +426,6 @@ CREATE TABLE member (
     (5037, 1037, 001, 'new', 'in stock', NULL, NULL),
     (5038, 1038, 001, 'new', 'checked out', 10003, '2020-04-03'),
     (5039, 1039, 001, 'new', 'checked out', 10008, '2020-04-06'),
-
     (5040, 1040, 001, 'new', 'checked out', 10000, '2020-04-06'),
     (5041, 1041, 001, 'new', 'checked out', 10006, '2020-04-07'),
     (5042, 1042, 001, 'new', 'checked out', 10005, '2020-04-09'),
@@ -450,7 +436,6 @@ CREATE TABLE member (
     (5047, 1047, 001, 'new', 'checked out', 10007, '2020-04-08'),
     (5048, 1048, 001, 'new', 'checked out', 10006, '2020-04-02'),
     (5049, 1049, 001, 'new', 'checked out', 10007, '2020-04-07'),
-
     (5050, 1050, 001, 'new', 'in stock', NULL, NULL),
     (5051, 1051, 001, 'new', 'in stock', NULL, NULL),
     (5052, 1052, 001, 'new', 'checked out', 10000, '2020-04-02'),
@@ -460,5 +445,26 @@ CREATE TABLE member (
     (5056, 1056, 001, 'new', 'checked out', 10001, '2020-04-03'),
     (5057, 1057, 001, 'new', 'checked out', 10002, '2020-04-05'),
     (5058, 1058, 001, 'new', 'checked out', 10003, '2020-04-01'),
-    (5059, 1059, 001, 'new', 'in stock', NULL, NULL);
+    (5059, 1059, 001, 'new', 'in stock', NULL, NULL)
+    (5060, 1060, 001, 'new', 'in stock', NULL, NULL),
+    (5061, 1061, 001, 'new', 'in stock', NULL, NULL),
+    (5062, 1062, 001, 'new', 'in stock', NULL, NULL),
+    (5063, 1063, 001, 'new', 'in stock', NULL, NULL),
+    (5064, 1064, 001, 'new', 'in stock', NULL, NULL),
+    (5065, 1065, 001, 'new', 'in stock', NULL, NULL),
+    (5065, 1066, 001, 'new', 'in stock', NULL, NULL),
+    (5066, 1067, 001, 'new', 'in stock', NULL, NULL),
+    (5067, 1068, 001, 'new', 'in stock', NULL, NULL),
+    (5068, 1069, 001, 'new', 'in stock', NULL, NULL),
+    (5069, 1050, 001, 'new', 'in stock', NULL, NULL),
+    (5070, 1051, 001, 'new', 'in stock', NULL, NULL),
+    (5071, 1052, 001, 'new', 'in stock', NULL, NULL),
+    (5061, 1053, 001, 'new', 'in stock', NULL, NULL),
+    (5062, 1054, 001, 'new', 'in stock', NULL, NULL),
+    (5063, 1055, 001, 'new', 'in stock', NULL, NULL),
+    (5064, 1056, 001, 'new', 'in stock', NULL, NULL),
+    (5065, 1057, 001, 'new', 'in stock', NULL, NULL),
+    (5066, 1058, 001, 'new', 'in stock', NULL, NULL),
+    (5067, 1059, 001, 'new', 'in stock', NULL, NULL);
+
 
